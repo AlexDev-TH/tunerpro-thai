@@ -1,0 +1,1629 @@
+# ==========================================================================
+# TunerPro ไฟล์ภาษาไทย (th)
+# ==========================================================================
+#
+# แปลจาก en.txt ของ TunerPro RT v6
+# ไฟล์นี้เก็บเป็น UTF-8 เพื่อให้อ่านและแก้บน GitHub ได้
+# ตัวติดตั้งจะแปลงเป็น Windows-874 แล้วเขียนลง lang\en.txt ของ TunerPro
+# เพราะ TunerPro อ่านไฟล์ภาษาแบบ ANSI และบางส่วนของโปรแกรมอ่านแค่ en.txt
+#
+# กติกาเดียวกับ en.txt
+#   ห้ามแก้ข้อความฝั่งซ้ายของเครื่องหมาย =
+#   คง %s %d %u ไว้ตามลำดับเดิม
+#   ข้อความหลัง \t คือปุ่มลัด ห้ามแก้
+#   เมนูใช้รูปแบบ ไฟล์(&F) เพื่อให้กด Alt+F ได้เหมือนเดิม
+#
+# ==========================================================================
+
+# ==========================================================================
+# Main Menu: File
+# ==========================================================================
+Menu.File = ไฟล์(&F)
+Menu.File.OpenBin = เปิด Bin(&O)...\tCtrl + O
+Menu.File.ImportBin = นำเข้า Bin
+Menu.File.ImportBin.FromSRecord = จาก S-Record (S19, PTP ฯลฯ)...
+Menu.File.SaveBin = บันทึก Bin(&S)\tCtrl + S
+Menu.File.SaveBinAs = บันทึก Bin เป็น(&A)...
+Menu.File.CloseBin = ปิด Bin(&C)
+Menu.File.PatchBin = แพตช์ Bin
+Menu.File.PatchBin.FromSRecord = จาก S-Record...
+Menu.File.RecentBins = Bin ที่เปิดล่าสุด
+Menu.File.ExportDataToFile = ส่งออกข้อมูลเป็นไฟล์ข้อความ...
+Menu.File.Exit = ออก(&X)\tAlt + F4
+
+# ==========================================================================
+# Main Menu: XDF
+# ==========================================================================
+Menu.XDF = &XDF
+Menu.XDF.SelectXDF = เลือก XDF(&S)...\tCtrl + E
+Menu.XDF.SaveXDF = บันทึก XDF(&X)\tCtrl + T
+Menu.XDF.SaveXDFAs = บันทึก XDF เป็น(&A)...
+Menu.XDF.NewXDF = สร้าง XDF ใหม่
+Menu.XDF.RecentXDFs = XDF ที่เปิดล่าสุด
+Menu.XDF.Import = นำเข้า
+Menu.XDF.Import.FromECU = จากไฟล์ ECU...
+Menu.XDF.Import.FromCSV = จากไฟล์มีตัวคั่น (CSV ฯลฯ)...
+Menu.XDF.Import.FromTDF = จากไฟล์ TDF...
+Menu.XDF.Import.FromVDF = จากไฟล์ VDF...
+Menu.XDF.Import.FromRDT = จากไฟล์ RDT...
+Menu.XDF.Import.FromCEE = จากไฟล์ CEE...
+Menu.XDF.Import.FromA2L = จากไฟล์ A2L...
+Menu.XDF.Import.FromDCM = จากไฟล์ DCM/DAMOS...
+Menu.XDF.EditXDFHeader = ดู/แก้ไขข้อมูลส่วนหัว XDF\tCtrl + F2
+Menu.XDF.EditItemXDFInfo = ดู/แก้ไขข้อมูล XDF ของพารามิเตอร์(&V)...\tF2
+Menu.XDF.BulkEdit = แก้ไขพารามิเตอร์ XDF ทีละหลายรายการ...
+Menu.XDF.NewItem = สร้างพารามิเตอร์ XDF ใหม่(&N)\tCtrl + N
+Menu.XDF.DeleteItem = ลบพารามิเตอร์ XDF ที่เลือก(&D)\tCtrl + D
+Menu.XDF.OpenNextEditor = เปิดตัวแก้ไข Bin ถัดไป
+Menu.XDF.OpenPrevEditor = เปิดตัวแก้ไข Bin ก่อนหน้า
+
+# ==========================================================================
+# Main Menu: View
+# ==========================================================================
+Menu.View = มุมมอง(&V)
+Menu.View.Toolbars = แถบเครื่องมือ
+Menu.View.Toolbars.Basic = พื้นฐาน
+Menu.View.Toolbars.Tools = เครื่องมือ
+Menu.View.Toolbars.View = มุมมอง
+Menu.View.Toolbars.Vis = ระดับการแสดงผล
+Menu.View.Toolbars.XDF = ตัวแก้ไข XDF
+Menu.View.Toolbars.Emu = อีมูเลชัน
+Menu.View.Toolbars.TuneBank = แบงก์จูน
+Menu.View.Toolbars.DA = เก็บข้อมูล
+Menu.View.Toolbars.DALog = ล็อกการเก็บข้อมูล
+Menu.View.Toolbars.DASndCmd = ส่งคำสั่งเก็บข้อมูล
+Menu.View.Toolbars.Plugins = ปลั๊กอิน
+Menu.View.Toolbars.PluginButtons = ปุ่มปลั๊กอิน
+Menu.View.ShowItemTree = แสดงโครงสร้างพารามิเตอร์\tF6
+Menu.View.ItemSummary = รายการสรุปพารามิเตอร์\tF7
+Menu.View.ItemComments = หมายเหตุพารามิเตอร์\tF10
+Menu.View.ShowGraph = แสดงกราฟ\tF11
+
+# ==========================================================================
+# Main Menu: Compare
+# ==========================================================================
+Menu.Compare = เปรียบเทียบ(&C)
+Menu.Compare.LoadBins = โหลด Bin เปรียบเทียบ(&L)...\tCtrl + F1
+Menu.Compare.Bin1 = Bin 1 (ไม่มี Bin)\tCtrl + 1
+Menu.Compare.Bin2 = Bin 2 (ไม่มี Bin)\tCtrl + 2
+Menu.Compare.Bin3 = Bin 3 (ไม่มี Bin)\tCtrl + 3
+Menu.Compare.Bin4 = Bin 4 (ไม่มี Bin)\tCtrl + 4
+
+# ==========================================================================
+# Main Menu: Acquisition
+# ==========================================================================
+Menu.Acq = เก็บข้อมูล(&A)
+Menu.Acq.LoadDef = โหลดไฟล์นิยาม...
+Menu.Acq.SaveDef = บันทึกนิยาม
+Menu.Acq.SaveDefAs = บันทึกนิยามเป็น...
+Menu.Acq.ImportDef = นำเข้านิยาม
+Menu.Acq.ImportDef.FromADS = จาก ADS...
+Menu.Acq.ImportDef.FromEFILive = จาก EFILive V4...
+Menu.Acq.EditDef = แก้ไขนิยาม...
+Menu.Acq.NewDef = สร้างนิยามใหม่...
+Menu.Acq.RecentDefs = นิยามที่เปิดล่าสุด
+Menu.Acq.StartStopScan = เริ่ม/หยุดสแกนข้อมูล\tCtrl + F4
+Menu.Acq.ToggleTracing = เปิด/ปิดการติดตามข้อมูล\tCtrl + L
+Menu.Acq.PortAssign = กำหนดพอร์ต...
+Menu.Acq.LoadLog = โหลดไฟล์ล็อก...
+Menu.Acq.ExportLog = ส่งออกไฟล์ล็อก...
+Menu.Acq.CloseLog = ปิดไฟล์ล็อก
+Menu.Acq.PlaybackSpeed = ความเร็วเล่นล็อก
+Menu.Acq.Speed400 = 400%
+Menu.Acq.Speed200 = 200%
+Menu.Acq.Speed100 = 100%
+Menu.Acq.Speed50 = 50%
+Menu.Acq.Speed25 = 25%
+Menu.Acq.SpeedCustom = กำหนดเอง...
+Menu.Acq.Play = เล่น/พัก\tAlt + Space
+Menu.Acq.Record = อัดล็อก\tCtrl + Alt + Space
+Menu.Acq.Stop = หยุด\tCtrl + Space
+Menu.Acq.Pause = พัก\tSpace
+Menu.Acq.Fwd10 = ข้ามไปหน้า 10 ตัวอย่าง\t]
+Menu.Acq.Bwd10 = ย้อนกลับ 10 ตัวอย่าง\t[
+Menu.Acq.Fwd1 = ข้ามไปหน้า 1 ตัวอย่าง
+Menu.Acq.Bwd1 = ย้อนกลับ 1 ตัวอย่าง
+Menu.Acq.Dash = แสดงแดชบอร์ด...\tCtrl + Shft + 1
+Menu.Acq.Lists = แสดงรายการข้อมูล...\tCtrl + Shft + 2
+Menu.Acq.Histos = แสดงตารางประวัติ...\tCtrl + Shft + 3
+Menu.Acq.Monitors = แสดงมอนิเตอร์...\tCtrl + Shft + 4
+Menu.Acq.TroubleCodes = แสดงรหัสปัญหา (DTC)...\tCtrl + Shft + 5
+
+# ==========================================================================
+# Main Menu: Tools
+# ==========================================================================
+Menu.Tools = เครื่องมือ(&T)
+Menu.Tools.Emulation = อีมูเลชัน(&E)
+Menu.Tools.Emu.Upload = อัปโหลด Bin ปัจจุบันลงฮาร์ดแวร์
+Menu.Tools.Emu.Download = ดาวน์โหลด Bin จากฮาร์ดแวร์
+Menu.Tools.Emu.DownloadToFile = ดาวน์โหลด Bin ลงไฟล์
+Menu.Tools.Emu.Verify = ตรวจเทียบฮาร์ดแวร์กับ Bin ปัจจุบัน
+Menu.Tools.Emu.EnableLive = เปิดจูนสด\tF3
+Menu.Tools.HWUtils = ยูทิลิตีฮาร์ดแวร์
+Menu.Tools.HWUtils.APADData = ข้อมูล A/D ของ AutoProm...\tCtrl + P
+Menu.Tools.HWUtils.PromIO = Moates PROM I/O...\tCtrl + B
+Menu.Tools.HWUtils.AddrWatch = เครื่องมือเฝ้าดูตำแหน่ง...\tCtrl + W
+Menu.Tools.HWUtils.OnboardLog = ล็อกบนบอร์ด Moates...\tAlt + L
+Menu.Tools.ParamFinder = ค้นหาพารามิเตอร์(&P)...\tCtrl + F
+Menu.Tools.DiffTool = เครื่องมือเทียบความต่าง...\tCtrl + T
+Menu.Tools.BinStacker = รวม/แยก Bin(&B)...\tF5
+Menu.Tools.WinCalc = เครื่องคิดเลขของ Windows
+Menu.Tools.Advanced = ขั้นสูง(&A)
+Menu.Tools.Adv.2DViewer = ดูข้อมูล 2 มิติ(&2)...\tCtrl + G
+Menu.Tools.Adv.3DViewer = ดูข้อมูล 3 มิติ(&3)
+Menu.Tools.Adv.HexEditor = ตัวแก้ไข Hex...\tCtrl + H
+Menu.Tools.InitHW = เริ่มต้นฮาร์ดแวร์จูน
+Menu.Tools.ReleaseHW = ปล่อยฮาร์ดแวร์จูน
+Menu.Tools.CustomTools = เครื่องมือกำหนดเอง
+Menu.Tools.EditCustomTools = แก้ไขเครื่องมือกำหนดเอง...
+Menu.Tools.Plugins = ปลั๊กอิน(&I)
+Menu.Tools.Plugins.Configure = ตั้งค่า(&C)...
+Menu.Tools.Plugins.None = (ไม่มีคำสั่งปลั๊กอิน)
+Menu.Tools.Prefs = ตั้งค่าโปรแกรม(&P)...
+
+# ==========================================================================
+# Main Menu: Window
+# ==========================================================================
+Menu.Window = หน้าต่าง(&W)
+Menu.Window.Cascade = เรียงซ้อน(&C)
+Menu.Window.Tile = เรียงต่อกัน(&T)
+Menu.Window.Tile.Vert = แนวตั้ง(&V)
+Menu.Window.Tile.Horiz = แนวนอน(&H)
+Menu.Window.CloseAll = ปิดตัวแก้ไขทั้งหมด(&A)
+Menu.Window.SaveAll = บันทึกตัวแก้ไขทั้งหมด(&S)
+Menu.Window.CloseActive = ปิดตัวแก้ไขที่ใช้อยู่
+Menu.Window.SaveActive = บันทึกตัวแก้ไขที่ใช้อยู่
+Menu.Window.CancelActive = ยกเลิกตัวแก้ไขที่ใช้อยู่
+
+# ==========================================================================
+# Main Menu: Help
+# ==========================================================================
+Menu.Help = ช่วยเหลือ(&H)
+Menu.Help.Topics = หัวข้อช่วยเหลือ...\tF12
+Menu.Help.Registration = ลงทะเบียน...
+Menu.Help.Website = เว็บไซต์...
+Menu.Help.Splash = หน้าจอเปิดโปรแกรม...
+Menu.Help.SysCheck = ตรวจระบบ
+Menu.Help.Plugins = ปลั๊กอิน...
+Menu.Help.CheckUpdates = ตรวจหาอัปเดตทางอินเทอร์เน็ต...
+Menu.Help.About = เกี่ยวกับ(&A)...
+
+# ==========================================================================
+# Context Menu: Scalar/Flag Editor
+# ==========================================================================
+Menu.SC.ConstFlag = ConstFlagEditor
+Menu.SC.ShowRawHex = แสดงค่า Hex ดิบ
+Menu.SC.ShowCalcValues = แสดงค่าที่คำนวณแล้ว
+
+# ==========================================================================
+# Context Menu: Table Editor
+# ==========================================================================
+Menu.SC.TableEditor = TableEditor
+Menu.SC.ShowRawHex2 = แสดงค่า Hex ดิบ
+Menu.SC.ShowCalcValues2 = แสดงค่าที่คำนวณแล้ว
+Menu.SC.ColorCells = ระบายสีเซลล์
+Menu.SC.CopySelection = คัดลอกส่วนที่เลือก\tCtrl + C
+Menu.SC.PasteAtCursor = วางเริ่มที่เคอร์เซอร์\tCtrl + V
+Menu.SC.SelectAll = เลือกทั้งหมด\tCtrl + A
+
+# ==========================================================================
+# Context Menu: Item Lists
+# ==========================================================================
+Menu.SC.ItemLists = ItemLists
+Menu.SC.EditItemXDF = แก้ไขข้อมูล XDF ของพารามิเตอร์\tF2
+Menu.SC.EditBinItem = แก้ไขพารามิเตอร์ใน Bin
+Menu.SC.InsertNewItem = แทรกพารามิเตอร์ XDF ใหม่\tCtrl + N
+Menu.SC.DeleteItem = ลบพารามิเตอร์ออกจาก XDF\tCtrl + D
+Menu.SC.CopyParam = คัดลอกพารามิเตอร์ XDF ไปคลิปบอร์ด\tCtrl + C
+Menu.SC.PasteParam = วางพารามิเตอร์ XDF จากคลิปบอร์ด\tCtrl + V
+
+# ==========================================================================
+# Context Menu: Workspace
+# ==========================================================================
+Menu.SC.Workspace = Workspace
+Menu.SC.Preferences = ตั้งค่าโปรแกรม...
+
+# ==========================================================================
+# Hex Editor Menu
+# ==========================================================================
+Menu.Hex.Action = คำสั่ง(&A)
+Menu.Hex.CommitChanges = ยืนยันการแก้ไข
+Menu.Hex.SaveAs = บันทึกเป็น(&A)...
+Menu.Hex.New = ใหม่(&N)
+Menu.Hex.Close = ปิด
+Menu.Hex.View = มุมมอง(&V)
+Menu.Hex.Hexadecimal = ฐานสิบหก(&H)
+Menu.Hex.Decimal = ฐานสิบ(&D)
+Menu.Hex.Octal = ฐานแปด(&O)
+Menu.Hex.Binary = ฐานสอง(&B)
+Menu.Hex.DecimalOffset = ออฟเซ็ตฐานสิบ(&D)
+Menu.Hex.FitToWindow = พอดีหน้าต่าง(&F)
+
+# Hex context menu
+Menu.HexCtx.Cut = ตัด(&U)\tCtrl+X
+Menu.HexCtx.Copy = คัดลอก(&C)\tCtrl+C
+Menu.HexCtx.Paste = วาง(&P)\tCtrl+V
+Menu.HexCtx.Clear = ล้าง(&C)\tDel
+
+# ==========================================================================
+# Table Editor Menu
+# ==========================================================================
+Menu.TE.Table = ตาราง
+Menu.TE.CommitChanges = ยืนยันการแก้ไข
+Menu.TE.Close = ปิด
+Menu.TE.View = มุมมอง
+Menu.TE.Tools = เครื่องมือ
+
+# ==========================================================================
+# 3D Graph Menu
+# ==========================================================================
+Menu.G3D.Graph = กราฟ
+Menu.G3D.Close = ปิด
+Menu.G3D.View = มุมมอง
+Menu.G3D.Wireframe = โครงลวด
+Menu.G3D.Autorange = ปรับช่วงอัตโนมัติ
+Menu.G3D.HeightColor = สีตามความสูง
+Menu.G3D.ShowAllPts = แสดงทุกจุด
+Menu.G3D.ShowCompare = แสดง Bin เปรียบเทียบ
+Menu.G3D.ResetPersp = รีเซ็ตมุมมอง
+Menu.G3D.SeriesView = มุมมองชุดข้อมูล 2 มิติ
+Menu.G3D.SeriesByCol = ชุดข้อมูลตามคอลัมน์
+Menu.G3D.AlwaysOnTop = อยู่บนสุดเสมอ
+
+# ==========================================================================
+# 2D Graph Menu
+# ==========================================================================
+Menu.G2D.Graph = กราฟ
+Menu.G2D.Close = ปิด
+Menu.G2D.View = มุมมอง
+Menu.G2D.Autorange = ปรับช่วงอัตโนมัติ
+Menu.G2D.ShowAllPts = แสดงทุกจุด
+Menu.G2D.ShowCompare = แสดง Bin เปรียบเทียบ
+Menu.G2D.AlwaysOnTop = อยู่บนสุดเสมอ
+
+# ==========================================================================
+# Trace Visual Menu
+# ==========================================================================
+Menu.Trace.Menu = เมนู
+Menu.Trace.Trace = เทรซ
+Menu.Trace.HitCounts = จำนวนครั้ง
+Menu.Trace.Exit = ออก
+
+# ==========================================================================
+# Compare Mode Menu
+# ==========================================================================
+Menu.CmpMode.Mode = โหมด
+Menu.CmpMode.Absolute = ค่าจริง
+Menu.CmpMode.Difference = ผลต่าง (แก้ไข - เปรียบเทียบ)
+Menu.CmpMode.Percentage = เปอร์เซ็นต์ (แก้ไข / เปรียบเทียบ * 100) - 100
+
+# ==========================================================================
+# Dialog: About Box (IDD_ABOUTBOX)
+# ==========================================================================
+Dlg.About.Caption = เกี่ยวกับ
+Dlg.About.AppTitle = Application
+Dlg.About.Copyright = Copyright (C) Mark Mansur
+Dlg.About.OK = ตกลง
+Dlg.About.Version = เวอร์ชัน
+Dlg.About.Website = คลิกเพื่อไปเว็บไซต์ TunerPro
+Dlg.About.BuildVersion = บิลด์
+
+# ==========================================================================
+# Dialog: Bin Stacker (IDD_BIN_STACKER)
+# ==========================================================================
+Dlg.BinStack.Caption = รวม/แยก Bin
+Dlg.BinStack.Append = ต่อท้าย
+Dlg.BinStack.Cancel = ยกเลิก
+Dlg.BinStack.Stack = รวม
+Dlg.BinStack.Split = แยก
+Dlg.BinStack.LoadLayout = โหลดเลย์เอาต์...
+Dlg.BinStack.SaveLayout = บันทึกเลย์เอาต์...
+Dlg.BinStack.ChipSize = ชิป
+Dlg.BinStack.BinSize = Bin
+Dlg.BinStack.OutputFile = ไฟล์ผลลัพธ์
+Dlg.BinStack.BlockSize = บล็อก
+Dlg.BinStack.LayoutParams = ค่าเลย์เอาต์ (ขนาดเป็นไบต์)
+Dlg.BinStack.Mode = โหมด
+Dlg.BinStack.EndJustify = ชิด Bin ไปท้ายบล็อก
+Dlg.BinStack.Fill = เติม 0x
+
+# ==========================================================================
+# Dialog: Scalar Editor (IDD_CONSTANT_EDITOR)
+# ==========================================================================
+Dlg.Scalar.Copy = คัดลอก
+Dlg.Scalar.Save = บันทึก
+Dlg.Scalar.Cancel = ยกเลิก
+Dlg.Scalar.MapName = ชื่อแมพ:
+Dlg.Scalar.Units = หน่วย
+Dlg.Scalar.CompareBin = Bin เทียบ
+
+# ==========================================================================
+# Dialog: Preferences/General (IDD_PREF_PS_GENERAL)
+# ==========================================================================
+Dlg.PrefGen.LoadLastXDF = โหลด XDF ล่าสุดตอนเปิด
+Dlg.PrefGen.LoadLastBIN = โหลด BIN ล่าสุดตอนเปิด
+Dlg.PrefGen.KeepEditors = คงตัวแก้ไขไว้หลังอัปเดต
+Dlg.PrefGen.ShowUnits = แสดงหน่วยในสรุปพารามิเตอร์
+Dlg.PrefGen.EditLogging = เก็บประวัติการแก้ไข
+Dlg.PrefGen.ListTracking = ติดตามรายการ
+Dlg.PrefGen.WarnOnClose = เตือนถ้าปิดตัวแก้ไขตอนยังแก้ค้าง
+Dlg.PrefGen.ApplyOnSave = ใช้การแก้ที่ค้างอยู่ตอนบันทึก Bin
+Dlg.PrefGen.PromptSync = ถามก่อนซิงก์กลุ่ม
+Dlg.PrefGen.ShowFileAddr = ตำแหน่งที่แสดงรวมออฟเซ็ต
+Dlg.PrefGen.ColorCells = สีเซลล์ตาราง
+Dlg.PrefGen.ReverseRows = กลับลำดับแถว
+Dlg.PrefGen.ReverseCols = กลับลำดับคอลัมน์
+Dlg.PrefGen.GraphOnTop = หน้าต่างกราฟอยู่บนสุด
+Dlg.PrefGen.Color3D = สีกราฟ 3D
+Dlg.PrefGen.Wireframe3D = กราฟ 3 มิติโครงลวด
+Dlg.PrefGen.AutoRange2D = ช่วงอัตโนมัติ 2D
+Dlg.PrefGen.AutoRange3D = ช่วงอัตโนมัติ 3D
+Dlg.PrefGen.General = ทั่วไป
+Dlg.PrefGen.TEOptions = ตัวเลือกตาราง
+Dlg.PrefGen.Graphing = กราฟ
+Dlg.PrefGen.DisplayData = ข้อมูลที่แสดง
+Dlg.PrefGen.CompareMode = โหมดเทียบ
+Dlg.PrefGen.FileAssoc = การผูกชนิดไฟล์
+Dlg.PrefGen.PtSelRad = รัศมีเลือกจุด
+
+# ==========================================================================
+# Dialog: Preferences/Colors (IDD_PREF_PS_COLORS)
+# ==========================================================================
+Dlg.PrefClr.BinStackGrp = สีหน้ารวม/แยก Bin
+Dlg.PrefClr.BS.Highlight = สีไฮไลต์
+Dlg.PrefClr.BS.HighlightText = สีข้อความไฮไลต์
+Dlg.PrefClr.BS.EditBkgnd = สีพื้นเซลล์ที่แก้ได้
+Dlg.PrefClr.BS.NonEditBkgnd = สีพื้นเซลล์ที่แก้ไม่ได้
+Dlg.PrefClr.BS.SelOutline = สีขอบเซลล์ที่เลือก
+Dlg.PrefClr.BS.GridLine = สีเส้นตาราง
+Dlg.PrefClr.BS.EditText = สีข้อความที่แก้ได้
+Dlg.PrefClr.TEGrp = สีตัวแก้ไขตาราง
+Dlg.PrefClr.TE.Highlight = สีไฮไลต์
+Dlg.PrefClr.TE.HighlightText = สีข้อความไฮไลต์
+Dlg.PrefClr.TE.EditBkgnd = สีพื้นเซลล์ที่แก้ได้
+Dlg.PrefClr.TE.NonEditBkgnd = สีพื้นเซลล์ที่แก้ไม่ได้
+Dlg.PrefClr.TE.SelOutline = สีขอบเซลล์ที่เลือก
+Dlg.PrefClr.TE.GridLine = สีเส้นตาราง
+Dlg.PrefClr.TE.EditText = สีข้อความที่แก้ได้
+Dlg.PrefClr.WorkspaceBkgnd = สีพื้นพื้นที่ทำงาน
+Dlg.PrefClr.TE.EditedText = สีข้อความที่แก้แล้ว
+Dlg.PrefClr.TE.HighValue = สีค่าสูง
+Dlg.PrefClr.TE.LowValue = สีค่าต่ำ
+Dlg.PrefClr.TreeBkgnd = สีพื้นโครงสร้างรายการ
+Dlg.PrefClr.TreeText = สีข้อความโครงสร้างรายการ
+Dlg.PrefClr.TreeDiff = สีจุดต่างในโครงสร้างรายการ
+Dlg.PrefClr.SummaryBkgnd = สีพื้นสรุปรายการ
+Dlg.PrefClr.SummaryText = สีข้อความสรุปรายการ
+Dlg.PrefClr.ResetDefaults = คืนค่าเริ่มต้น
+
+# ==========================================================================
+# Dialog: Preferences/Default Defs (IDD_PREF_PS_DEFAULT_DEFS)
+# ==========================================================================
+Dlg.PrefDef.EnableDefaults = เปิดการโหลดนิยามเริ่มต้น
+Dlg.PrefDef.PromptForDef = ถามหานิยามเมื่อไม่รู้จัก ID
+Dlg.PrefDef.Save = บันทึก
+Dlg.PrefDef.AddNew = เพิ่มใหม่
+Dlg.PrefDef.Delete = ลบ
+Dlg.PrefDef.IDOffset = ออฟเซ็ต ID
+Dlg.PrefDef.IDByte = ไบต์ ID
+Dlg.PrefDef.DefFile = ไฟล์นิยามสำหรับแก้ Mask ID นี้
+
+# ==========================================================================
+# Dialog: Preferences/Data Acq & Emulation (IDD_PREF_PS_DA_EMU)
+# ==========================================================================
+Dlg.PrefDAEmu.ConfigDAPlugin = ตั้งค่าปลั๊กอิน
+Dlg.PrefDAEmu.PortAssign = กำหนดพอร์ต...
+Dlg.PrefDAEmu.LoadLastADX = โหลดนิยามล่าสุดตอนเปิด
+Dlg.PrefDAEmu.WarnMismatch = เตือนเมื่อ ADX/XDF ไม่ตรงกัน
+Dlg.PrefDAEmu.ConfigEmuPlugin = ตั้งค่าปลั๊กอิน
+Dlg.PrefDAEmu.DetectHW = ตรวจหาฮาร์ดแวร์ตอนเปิด
+Dlg.PrefDAEmu.UploadWhole = อัปโหลดทั้งตาราง
+Dlg.PrefDAEmu.RealtimeGraph = อัปโหลดทันทีจากกราฟ/สไลเดอร์
+Dlg.PrefDAEmu.AudibleConfirm = ส่งเสียงยืนยันการอัปเดต
+Dlg.PrefDAEmu.DAGrp = เก็บข้อมูลและล็อก
+Dlg.PrefDAEmu.EmuGrp = อีมูเลชัน
+Dlg.PrefDAEmu.IntType = อินเทอร์เฟซ
+Dlg.PrefDAEmu.EmuPlugin = ปลั๊กอินฮาร์ดแวร์จูน:
+Dlg.PrefDAEmu.DAPlugin = ปลั๊กอิน I/O เก็บข้อมูลเริ่มต้น
+
+# ==========================================================================
+# Dialog: Compare Selection (IDD_COMPARE_SELECTION)
+# ==========================================================================
+Dlg.Compare.Caption = เลือก Bin เปรียบเทียบ
+Dlg.Compare.OK = ตกลง
+Dlg.Compare.Cancel = ยกเลิก
+Dlg.Compare.Bin1 = Bin 1
+Dlg.Compare.Bin2 = Bin 2
+Dlg.Compare.Bin3 = Bin 3
+Dlg.Compare.Bin4 = Bin 4
+Dlg.Compare.Enable = เปิดใช้
+
+# ==========================================================================
+# Dialog: Registration (IDD_REGISTRATION)
+# ==========================================================================
+Dlg.Reg.Caption = ลงทะเบียน
+Dlg.Reg.Register = ลงทะเบียน
+Dlg.Reg.Close = ปิด
+Dlg.Reg.InfoLabel = ข้อมูลลงทะเบียน:
+Dlg.Reg.Thanks = ขอบคุณที่เลือกลงทะเบียน กรุณาทำตามขั้นตอนด้านล่าง
+Dlg.Reg.Step1 = 1. ชำระค่าลงทะเบียนผ่าน PayPal ด้วยปุ่มทางขวา ตรวจดูว่าข้อมูลใน PayPal มีอีเมล ที่อยู่ และเบอร์โทรครบ
+Dlg.Reg.Step2 = 2. คุณจะได้รับคีย์ปลดล็อกทางอีเมล เลือกไฟล์คีย์ด้านล่างแล้วคลิก "ลงทะเบียน"
+Dlg.Reg.Step3 = 3. ใช้งานโปรแกรมที่ลงทะเบียนแล้วได้เลย
+Dlg.Reg.Disclosure = ข้อมูลที่ให้จะใช้เพื่อติดตามลูกค้าเท่านั้น คุณจะไม่ได้รับสแปม และข้อมูลจะไม่ถูกขายหรือนำไปใช้ทางอื่น
+Dlg.Reg.SendPayment = ชำระเงิน
+Dlg.Reg.BrowseKey = เลือกไฟล์คีย์...
+
+# ==========================================================================
+# Dialog: Registration Info (IDD_REGINFO)
+# ==========================================================================
+Dlg.RegInfo.Caption = ข้อมูลการลงทะเบียน
+Dlg.RegInfo.Close = ปิด
+Dlg.RegInfo.RegTo = ลงทะเบียนให้:
+
+# ==========================================================================
+# Dialog: Nag (IDD_NAG_DIALOG)
+# ==========================================================================
+Dlg.Nag.Caption = ยังไม่ได้ลงทะเบียน...
+Dlg.Nag.Continue = ต่อไป...
+Dlg.Nag.ContinueIn = ต่อใน
+Dlg.Nag.UnregMsg = โปรแกรมชุดนี้ยังไม่ได้ลงทะเบียน ถ้าใช้แล้วชอบช่วยลงทะเบียนด้วย
+Dlg.Nag.Register = ลงทะเบียน
+Dlg.Nag.Warning = จะลงทะเบียนหรือไม่ก็ได้ TunerPro RT ใช้งานได้ครบแม้ไม่ลงทะเบียนและไม่มีวันหมดอายุ ก่อนลงทะเบียนควรตรวจให้แน่ใจว่าใช้กับรถของคุณได้และตรงความต้องการ
+
+# ==========================================================================
+# Dialog: AutoProm A/D UI (IDD_AUTOPROM_AD_UI)
+# ==========================================================================
+Dlg.APAD.Caption = อินเทอร์เฟซข้อมูล A/D ของ AutoProm
+Dlg.APAD.Close = ปิด
+Dlg.APAD.Chan1 = ช่อง 1
+Dlg.APAD.Chan2 = ช่อง 2
+Dlg.APAD.Chan3 = ช่อง 3
+Dlg.APAD.SampleRate = อัตราสุ่ม
+Dlg.APAD.Hz = Hz
+Dlg.APAD.EditConfig = แก้ไขการตั้งค่าช่อง
+
+# ==========================================================================
+# Dialog: Item Finder (IDD_ITEM_FINDER)
+# ==========================================================================
+Dlg.Finder.Caption = ค้นหารายการ...
+Dlg.Finder.Search = ค้นหา
+Dlg.Finder.Close = ปิด
+Dlg.Finder.Find = ค้นหา
+Dlg.Finder.Value = ค่า
+Dlg.Finder.FoundCount = พบรายการ:
+
+# ==========================================================================
+# Dialog: RAM To File (IDD_RAM_TO_FILE)
+# ==========================================================================
+Dlg.RTF.Caption = RAM อีมูเลเตอร์ลงไฟล์...
+Dlg.RTF.OK = ตกลง
+Dlg.RTF.Cancel = ยกเลิก
+Dlg.RTF.ChipSize = ขนาดชิป
+Dlg.RTF.EmuType = ชนิดอีมูเลเตอร์
+Dlg.RTF.Advanced = ขั้นสูง
+Dlg.RTF.OutputFile = ไฟล์ผลลัพธ์
+
+# ==========================================================================
+# Dialog: 2D Data Viewer (IDD_2DDATAVIEWER)
+# ==========================================================================
+Dlg.2DV.Caption = ค้นหาตารางแบบกราฟ
+Dlg.2DV.Signed = มี +/-
+Dlg.2DV.LSBFirst = LSB ก่อน
+Dlg.2DV.Float = ทศนิยมลอยตัว
+Dlg.2DV.Close = ปิด
+Dlg.2DV.ViewportZoom = ซูมมุมมอง
+Dlg.2DV.StartAddr = ตำแหน่งเริ่มของมุมมอง
+Dlg.2DV.EndAddr = ตำแหน่งท้าย
+
+# ==========================================================================
+# Dialog: Hex Editor (IDD_HEX_EDITOR)
+# ==========================================================================
+Dlg.HexEd.Caption = ตัวแก้ไข Hex ของ TunerPro
+
+# ==========================================================================
+# Dialog: Difference Tool (IDD_DIFFERENCE_TOOL)
+# ==========================================================================
+Dlg.Diff.Caption = เครื่องมือเทียบความต่าง
+Dlg.Diff.LimitToDefined = ค้นเฉพาะรายการที่นิยามไว้
+Dlg.Diff.Search = ค้นหา
+Dlg.Diff.Close = ปิด
+Dlg.Diff.CopyRtoL = คัดลอกที่เลือกจากขวาไปซ้าย
+Dlg.Diff.CopyLtoR = คัดลอกที่เลือกจากซ้ายไปขวา
+Dlg.Diff.Between = หาความต่างระหว่าง
+Dlg.Diff.And = กับ
+Dlg.Diff.StartAddr = ตำแหน่งเริ่ม (Hex)
+Dlg.Diff.End = ท้าย
+Dlg.Diff.Count = ต่างกัน 0 จุด
+Dlg.Diff.Filter = กรอง:
+Dlg.Diff.ExpandAll = ขยายหมด
+Dlg.Diff.CollapseAll = ยุบหมด
+
+# ==========================================================================
+# Dialog: Bit/Flag Editor (IDD_BIT_EDITOR)
+# ==========================================================================
+Dlg.Flag.Save = บันทึก
+Dlg.Flag.Cancel = ยกเลิก
+Dlg.Flag.Set = เปิด
+Dlg.Flag.Compare = เทียบ
+
+# ==========================================================================
+# Dialog: Internet Update (IDD_INTERNET_UPDATE)
+# ==========================================================================
+Dlg.Update.Caption = ตรวจหาอัปเดต
+Dlg.Update.Close = ปิด
+Dlg.Update.Check = ตรวจหาอัปเดต
+Dlg.Update.URL = คลิกเพื่อดูลิงก์ดาวน์โหลด รายการเปลี่ยนแปลง และประวัติ TunerPro
+
+# ==========================================================================
+# Dialog: New XDF Object (IDD_NEW_XDF_OBJECT)
+# ==========================================================================
+Dlg.NewXDF.Caption = สร้างอ็อบเจ็กต์ XDF ใหม่
+Dlg.NewXDF.Scalar = สเกลาร์
+Dlg.NewXDF.Flag = แฟล็ก/สวิตช์
+Dlg.NewXDF.Table = ตาราง
+Dlg.NewXDF.Function = ฟังก์ชัน
+Dlg.NewXDF.Patch = แพตช์
+Dlg.NewXDF.InsertAtSel = แทรกตรงที่เลือก
+Dlg.NewXDF.OK = ตกลง
+Dlg.NewXDF.Cancel = ยกเลิก
+Dlg.NewXDF.Type = ชนิด
+
+# ==========================================================================
+# Dialog: 3D Data Viewer (IDD_3DDATAVIEWER)
+# ==========================================================================
+Dlg.3DV.Caption = ดูข้อมูล 3 มิติ
+Dlg.3DV.LSBFirst = LSB ก่อน
+Dlg.3DV.Signed = มี +/-
+Dlg.3DV.Float = ทศนิยมลอยตัว
+Dlg.3DV.Close = ปิด
+Dlg.3DV.Rows = แถว
+Dlg.3DV.Cols = หลัก
+Dlg.3DV.Address = ตำแหน่ง
+
+# ==========================================================================
+# Dialog: Table Editor Toolbar (IDD_TABLE_EDITOR_TOOLBAR)
+# ==========================================================================
+Dlg.TEToolbar.Execute = ทำงาน
+Dlg.TEToolbar.Function = ฟังก์ชัน:
+Dlg.TEToolbar.Value = ค่า:
+
+# ==========================================================================
+# Dialog: Item Tree View (IDD_ITEMTREEVIEW)
+# ==========================================================================
+Dlg.Tree.ViewBy = ดูตาม:
+Dlg.Tree.Filter = กรอง:
+
+# ==========================================================================
+# Dialog: Trace Parameters (IDD_TRACE_PARAMS)
+# ==========================================================================
+Dlg.Trace.Caption = ค่าการเทรซ
+Dlg.Trace.OK = ตกลง
+Dlg.Trace.Cancel = ยกเลิก
+Dlg.Trace.Addressing = ตำแหน่ง
+Dlg.Trace.Rows = แถว
+Dlg.Trace.Cols = คอลัมน์
+Dlg.Trace.StartAddr = ตำแหน่งเริ่ม (Hex)
+Dlg.Trace.Colors = สี (ฐานสิบ)
+Dlg.Trace.MinHit = ครั้งต่ำสุด
+Dlg.Trace.MaxHit = ครั้งสูงสุด
+Dlg.Trace.AddrInfo = ตำแหน่งเป็นแบบสัมบูรณ์ ถ้าเป็น Bin 32KB ในแบงก์ 0 ตำแหน่งเริ่มจะเป็น 0x78000
+
+# ==========================================================================
+# Dialog: Hit Count (IDD_HITCOUNT)
+# ==========================================================================
+Dlg.HitCount.Caption = จำนวนครั้ง
+
+# ==========================================================================
+# Dialog: Preferences/Shortcuts (IDD_PREF_PS_SHORTCUTS)
+# ==========================================================================
+Dlg.PrefKeys.SelectCombo = เลือกปุ่มลัดใหม่
+Dlg.PrefKeys.ClearCombo = ล้างปุ่มลัด
+Dlg.PrefKeys.RestoreDefaults = คืนค่าเริ่มต้น
+
+# ==========================================================================
+# Dialog: Patch Editor (IDD_PATCH_EDITOR)
+# ==========================================================================
+Dlg.Patch.ApplyPatch = ใส่แพตช์
+Dlg.Patch.RevertPatch = ถอนแพตช์
+Dlg.Patch.Apply = ใช้
+Dlg.Patch.Cancel = ยกเลิก
+Dlg.Patch.CurDataState = สถานะข้อมูลปัจจุบัน:
+Dlg.Patch.CompareBinState = สถานะ Bin เทียบ
+
+# ==========================================================================
+# Dialog: Preferences/Custom Tools (IDD_PREF_PS_CUSTTOOLS)
+# ==========================================================================
+Dlg.PrefTools.New = ใหม่
+Dlg.PrefTools.Delete = ลบ
+Dlg.PrefTools.Edit = แก้ไข
+
+# ==========================================================================
+# Dialog: Edit Custom Tool (IDD_PREF_EDIT_CUST_TOOL)
+# ==========================================================================
+Dlg.EditTool.Caption = แก้ไขข้อมูลเครื่องมือกำหนดเอง
+Dlg.EditTool.OK = ตกลง
+Dlg.EditTool.Cancel = ยกเลิก
+Dlg.EditTool.ToolPath = พาธ
+Dlg.EditTool.MenuText = ชื่อเมนู
+Dlg.EditTool.CmdLine = พารามิเตอร์คำสั่ง
+Dlg.EditTool.AvailMacros = มาโครบรรทัดคำสั่งที่ใช้ได้
+Dlg.EditTool.Macro1 = $(CurBinPath) = พาธของ Bin ที่โหลดอยู่
+Dlg.EditTool.KeyShortcut = ปุ่มลัด
+Dlg.EditTool.Select = เลือก
+Dlg.EditTool.Macro2 = $(UserFiles) = พาธไฟล์ผู้ใช้ TunerPro (Documents)
+Dlg.EditTool.Example = ตัวอย่าง: -in:$(CurBinpath) -out:$(UserFiles)Out.bin
+Dlg.EditTool.Resolution = ละเอียด
+
+# ==========================================================================
+# Dialog: Plugin Info (IDD_PLUGININFO)
+# ==========================================================================
+Dlg.PluginInfo.Caption = เกี่ยวกับปลั๊กอิน
+
+# ==========================================================================
+# Dialog: DA Playback Custom (IDD_DA_PLAYBACK_CUSTOM)
+# ==========================================================================
+Dlg.Playback.Caption = ความเร็วเล่นล็อกกำหนดเอง
+Dlg.Playback.OK = ตกลง
+Dlg.Playback.Cancel = ยกเลิก
+Dlg.Playback.Multiplier = ตัวคูณความเร็ว
+
+# ==========================================================================
+# Dialog: CSV to XDF Importer (IDD_CSV_TO_XDF_IMPORTER)
+# ==========================================================================
+Dlg.CSV.Caption = นำเข้า XDF จากไฟล์ข้อความมีตัวคั่น
+Dlg.CSV.IDHeader = มีหัวข้อ ID ฟิลด์
+Dlg.CSV.Import = นำเข้า
+Dlg.CSV.Cancel = ยกเลิก
+Dlg.CSV.InputFile = ไฟล์เข้า
+Dlg.CSV.Delimiter = ตัวคั่น
+Dlg.CSV.FieldOrder = ลำดับฟิลด์
+Dlg.CSV.Available = ที่เลือกได้
+Dlg.CSV.ColOrder = ลำดับคอลัมน์ CSV
+Dlg.CSV.IgnoreFirst = ข้ามแถวแรก
+Dlg.CSV.Up = ขึ้น
+Dlg.CSV.Down = ลง
+
+# ==========================================================================
+# Dialog: Adjustment Toolbox (IDD_ADJUSTMENT_TOOLBOX)
+# ==========================================================================
+Dlg.Adjust.Caption = กล่องเครื่องมือปรับค่า
+Dlg.Adjust.Execute = ทำงาน
+Dlg.Adjust.Function = ฟังก์ชัน:
+Dlg.Adjust.Value = ค่า:
+
+# ==========================================================================
+# Dialog: Preferences Grid View (IDD_PREF_GRIDVIEW)
+# ==========================================================================
+Dlg.Prefs.Caption = ตั้งค่า TunerPro
+Dlg.Prefs.OK = ตกลง
+Dlg.Prefs.Cancel = ยกเลิก
+Dlg.Prefs.Apply = ใช้
+
+# ==========================================================================
+# Dialog: Port Assignment (IDD_PORT_ASSIGNMENT)
+# ==========================================================================
+Dlg.PortAssign.Caption = กำหนดพอร์ต
+Dlg.PortAssign.Plugin = Plugin:
+Dlg.PortAssign.Configure = ตั้งค่า...
+Dlg.PortAssign.COMPort = พอร์ต:
+Dlg.PortAssign.SkipPort = ไม่ใช้พอร์ตนี้
+Dlg.PortAssign.Info = เลือกพอร์ตด้านบนเพื่อกำหนดปลั๊กอินและพอร์ต COM ถ้าเว้นอย่างใดอย่างหนึ่งไว้ พอร์ตนั้นจะถูกข้ามในการใช้งานรอบนี้
+Dlg.PortAssign.OK = ตกลง
+Dlg.PortAssign.Cancel = ยกเลิก
+Msg.PortAssign.PluginNotInstalled = (ไม่ได้ติดตั้ง)
+Msg.PortAssign.DefaultNotInstalled = ไม่ได้ติดตั้งปลั๊กอินเริ่มต้นที่นิยามนี้กำหนด:
+Msg.Channels.Title = ช่องข้อมูล
+Msg.Channels.NoDefinition = โหลดนิยามเก็บข้อมูลก่อนเลือกช่องข้อมูล
+Msg.Channels.StopFirst = หยุดเก็บข้อมูลและหยุดเล่นล็อกก่อนเปลี่ยนช่องข้อมูล
+Msg.Channels.NoProvider = อินเทอร์เฟซเก็บข้อมูลที่ติดตั้งไว้ไม่มีตัวไหนมีช่องข้อมูล
+Msg.Channels.UIFailed = อินเทอร์เฟซแสดงหน้าเลือกช่องข้อมูลไม่ได้
+Msg.Hardware.Busy = TunerPro กำลังทำงานกับฮาร์ดแวร์อีมูเลชัน รอให้เสร็จแล้วลองใหม่
+Msg.PluginLane.Title = TunerPro
+Msg.PluginLane.NotResponding = %s ไม่ตอบสนอง
+Msg.PluginLane.NotRespondingGeneric = มีปลั๊กอินไม่ตอบสนอง
+Msg.PluginLane.Detail = TunerPro กำลังรอให้ปลั๊กอินนี้ทำงานที่สั่งไว้ให้เสร็จ จะรอต่อ หรือเลิกรอแล้วทำงานต่อโดยไม่ใช้คำตอบจากปลั๊กอินก็ได้\n\nการเลิกรอไม่ได้หยุดงานของปลั๊กอิน และ TunerPro จะไม่เรียกใช้ปลั๊กอินนี้อีกจนกว่าจะตอบกลับ ถ้าไม่ตอบกลับเลยให้เปิด TunerPro ใหม่
+Msg.PluginLane.KeepWaiting = รอต่อ
+Msg.PluginLane.StopWaiting = เลิกรอ
+
+# ==========================================================================
+# Panel: Trouble Codes (IDD_DA_TROUBLECODES)
+# ==========================================================================
+Dlg.DTC.Port = ที่มา:
+Dlg.DTC.Read = อ่านรหัส(&R)
+Dlg.DTC.Clear = ล้างรหัส(&C)...
+Dlg.DTC.Copy = คัดลอก(&O)
+Dlg.DTC.CodesLabel = รหัสปัญหา:
+Dlg.DTC.ReadinessLabel = สถานะความพร้อม:
+Msg.DTC.Title = รหัสปัญหา
+Msg.DTC.Intro = อ่านรหัสปัญหาและสถานะความพร้อมด้านไอเสียของรถผ่านอินเทอร์เฟซเก็บข้อมูลของนิยาม ใช้ได้ทั้งตอนที่สแกนอยู่และไม่ได้สแกน
+Msg.DTC.Working = กำลังสื่อสารกับรถ...
+Msg.DTC.NoDefinition = โหลดนิยามเก็บข้อมูลเพื่ออ่านรหัสปัญหาผ่านอินเทอร์เฟซของนิยามนั้น
+Msg.DTC.Busy = กำลังอ่านรหัสปัญหาอยู่แล้ว
+Msg.DTC.BusyStart = กำลังอ่านรหัสปัญหา เริ่มสแกนหลังอ่านเสร็จ
+Msg.DTC.StopPlayback = หยุดเล่นล็อกก่อนอ่านรหัสปัญหา
+Msg.DTC.Stopping = กำลังหยุดเก็บข้อมูล รอสักครู่แล้วลองใหม่
+Msg.DTC.StopLogging = หยุดอัดล็อกก่อนล้างรหัสปัญหา
+Msg.DTC.PortNotActive = พอร์ตนั้นไม่ได้อยู่ในการสแกนที่กำลังทำงาน
+Msg.DTC.NotSupported = อินเทอร์เฟซเก็บข้อมูลของพอร์ตนี้อ่านรหัสปัญหาไม่ได้
+Msg.DTC.Aborted = คำขอถูกยกเลิกเพราะการเก็บข้อมูลหยุดแล้ว
+Msg.DTC.ReadFailed = อ่านรหัสปัญหาไม่ได้:
+Msg.DTC.ClearFailed = ล้างรหัสปัญหาไม่ได้:
+Msg.DTC.Cleared = ล้างรหัสปัญหาแล้ว
+Msg.DTC.ClearTitle = ล้างรหัสปัญหา
+Msg.DTC.ClearConfirm = การล้างรหัสปัญหาจะลบข้อมูล Freeze Frame ด้วย และรีเซ็ตสถานะความพร้อมด้านไอเสียทุกตัวเป็น "ไม่พร้อม" ถ้ายังขับไม่มากพอให้ระบบตรวจซ้ำครบ รถอาจตรวจไอเสียไม่ผ่าน\n\nรถส่วนใหญ่จะล้างรหัสได้เฉพาะตอนเปิดสวิตช์กุญแจและดับเครื่องยนต์\n\nล้างรหัสปัญหาตอนนี้เลยไหม?
+Msg.DTC.MIL = ไฟเช็กเอนจิน (MIL):
+Msg.DTC.On = ติด
+Msg.DTC.Off = ดับ
+Msg.DTC.StoredCount = ที่เก็บไว้:
+Msg.DTC.PendingCount = รอยืนยัน:
+Msg.DTC.PermanentCount = ถาวร:
+Msg.DTC.VIN = เลขตัวถัง (VIN):
+Msg.DTC.Protocol = โปรโตคอล:
+Msg.DTC.ReadAt = อ่านเมื่อ
+Msg.DTC.DefaultPort = พอร์ตเริ่มต้น
+Msg.DTC.Type.Stored = ที่เก็บไว้
+Msg.DTC.Type.Pending = รอยืนยัน
+Msg.DTC.Type.Permanent = ถาวร
+Msg.DTC.Type.Active = ทำงานอยู่
+Msg.DTC.NoSource = นิยามนี้ไม่มีรหัสปัญหา ให้เพิ่มตารางรหัสปัญหาในตัวแก้ไข ADX หรือใช้อินเทอร์เฟซเก็บข้อมูลที่อ่านรหัสปัญหาได้ (เช่น ELM327 สำหรับ OBD2)
+Msg.DTC.LiveCount = รหัสปัญหาที่ทำงานอยู่ %u รหัส (สด)
+Msg.DTC.LiveIdle = ไม่ได้รับข้อมูล ให้เริ่มสแกนหรือเล่นล็อก ข้อมูลล่าสุดมีรหัสปัญหาที่ทำงานอยู่ %u รหัส
+Msg.DTC.NoClearCmd = ตารางนี้ไม่มีคำสั่งล้าง จึงล้างรหัสจากตรงนี้ไม่ได้
+Msg.DTC.ClearConfirmADX = ล้างรหัสปัญหาโดยส่งคำสั่ง "%s" ของนิยามตอนนี้เลยไหม?
+Msg.DTC.Complete = พร้อม
+Msg.DTC.Incomplete = ไม่พร้อม
+Msg.DTC.Col.Code = รหัส
+Msg.DTC.Col.Type = ชนิด
+Msg.DTC.Col.ECU = กล่องควบคุม
+Msg.DTC.Col.Description = คำอธิบาย
+Msg.DTC.Col.Monitor = รายการตรวจ
+Msg.DTC.Col.Status = สถานะ
+Msg.DTC.Rdy.Misfire = จุดระเบิดผิดพลาด
+Msg.DTC.Rdy.Fuel = ระบบเชื้อเพลิง
+Msg.DTC.Rdy.Components = ชิ้นส่วนโดยรวม
+Msg.DTC.Rdy.Catalyst = แคตาไลติก
+Msg.DTC.Rdy.HeatedCat = แคตาไลติกแบบอุ่น
+Msg.DTC.Rdy.Evap = ระบบไอระเหยเชื้อเพลิง
+Msg.DTC.Rdy.SecAir = อากาศทุติยภูมิ
+Msg.DTC.Rdy.O2 = เซ็นเซอร์ออกซิเจน
+Msg.DTC.Rdy.O2Heater = ฮีตเตอร์เซ็นเซอร์ออกซิเจน
+Msg.DTC.Rdy.EGR = ระบบ EGR / VVT
+Msg.DTC.Rdy.NMHC = แคตาไลติก NMHC
+Msg.DTC.Rdy.NOx = ระบบบำบัด NOx
+Msg.DTC.Rdy.Boost = แรงดันบูสต์
+Msg.DTC.Rdy.EGS = เซ็นเซอร์ไอเสีย
+Msg.DTC.Rdy.PMF = ตัวกรองเขม่า
+
+# ==========================================================================
+# Dialog: Graph (IDD_GRAPH)
+# ==========================================================================
+Dlg.Graph.Caption = กราฟ
+
+# ==========================================================================
+# Messages: App Startup
+# ==========================================================================
+Msg.AlreadyOpen = TunerPro เปิดอยู่แล้ว
+Msg.InitError = TunerPro เริ่มทำงานไม่สำเร็จ
+Msg.ClassRegError = ลงทะเบียนคลาสไม่สำเร็จ
+Msg.CantLoadRichEdit = โหลด RICHED20.DLL ไม่ได้ ตรวจดูว่าไฟล์อยู่ใน Path หรือโฟลเดอร์โปรแกรม แล้วเปิด TunerPro ใหม่
+Msg.CantLoadXDFEditor = โหลด XDFEditor DLL ไม่ได้ ตรวจดูว่าไฟล์อยู่ใน Path หรือโฟลเดอร์โปรแกรม แล้วเปิด TunerPro ใหม่
+Msg.CantGetXDFProc = หา proc address ของ XDFEditor ไม่พบ ตรวจดูว่า XDFEditor.DLL ไม่เสียและอยู่ในโฟลเดอร์ที่ถูกต้อง
+Msg.CantGetPropGrid = หา proc address ของ XDFPropGrid ไม่พบ ตรวจดูว่า XDFEditor.DLL ไม่เสียและอยู่ในโฟลเดอร์ที่ถูกต้อง
+Msg.CantLoadPromIO = โหลด Prom I/O DLL ไม่ได้ ตรวจดูว่าไฟล์อยู่ใน Path หรือโฟลเดอร์โปรแกรม แล้วเปิด TunerPro ใหม่
+Msg.CantGetPromProc = หา proc address ของ Prom IO UI ไม่พบ ตรวจดูว่า PromIO.DLL ไม่เสียและอยู่ในโฟลเดอร์ที่ถูกต้อง
+Msg.CantLoadMOL = โหลด Moates Onboard Logger DLL ไม่ได้ ตรวจดูว่าไฟล์อยู่ใน Path หรือโฟลเดอร์โปรแกรม แล้วเปิด TunerPro ใหม่
+Msg.CantGetMOLProc = หา UI procedure ของ Moates onboard logger ไม่พบ ตรวจดูว่า MoatesOnboardLoggerUI.DLL ไม่เสียและอยู่ในโฟลเดอร์ที่ถูกต้อง
+Msg.CantLoadADXEditor = โหลด ADXEditor.dll ไม่ได้ ตรวจดูว่าไฟล์อยู่ใน Path หรือโฟลเดอร์โปรแกรม แล้วเปิดโปรแกรมใหม่
+Msg.CantGetADXProc = หา entry point ของ ADXEditor ไม่พบ ตรวจดูว่า ADXEditor.dll ไม่เสียและอยู่ในโฟลเดอร์ที่ถูกต้อง
+Msg.Error = ผิดพลาด
+
+# ==========================================================================
+# Messages: Save/Close Prompts
+# ==========================================================================
+Msg.XdfModifiedSave = XDF มีการแก้ไข บันทึกไหม?
+Msg.SaveXdf = บันทึก XDF ไหม?
+Msg.SaveFailed = บันทึกไม่สำเร็จ!
+Msg.ContactSupport = กรุณาติดต่อฝ่ายสนับสนุน
+Msg.BinModifiedSave = Bin มีการแก้ไข บันทึกไหม?
+Msg.SaveBin = บันทึก Bin ไหม?
+Msg.EditorModifiedCommit = เนื้อหาในตัวแก้ไขเปลี่ยนไป ยืนยันการแก้ไขลง Bin ที่โหลดอยู่ไหม?
+Msg.DataChangedDiscard = ข้อมูลเปลี่ยนไป ทิ้งการเปลี่ยนแปลงไหม?
+Msg.AcqDefModifiedSave = นิยามเก็บข้อมูลมีการแก้ไข บันทึกไหม?
+Msg.SaveAcqDef = บันทึกนิยามไหม?
+
+# ==========================================================================
+# Messages: Editor Window Titles
+# ==========================================================================
+Msg.ReadOnlyTitleSuffix = (อ่านอย่างเดียว)
+
+# ==========================================================================
+# Messages: Emulation
+# ==========================================================================
+Msg.Emu.NoBin = ไม่มี Bin ในหน่วยความจำ
+Msg.Emu.UploadImpossible = อัปโหลดไม่ได้
+Msg.Emu.BinTooLarge = ล้มเหลว: Bin ใหญ่กว่า RAM อีมูเลชัน! คุณอาจตั้งใจจะใช้แบงก์ 8?
+Msg.Emu.BinTooLargeWarn = Bin ใหญ่กว่า RAM อีมูเลชัน! คุณอาจตั้งใจจะใช้แบงก์ 8?\nถ้าทำต่อ ความเสี่ยงเป็นของคุณเอง!
+Msg.Emu.NoXDF = ไม่ได้ระบุไฟล์ XDF หรือ XDF ระบุขนาด Bin เป็น 0
+Msg.Emu.ErrorDownloading = ดาวน์โหลด Bin ผิดพลาด
+Msg.Emu.VerifyImpossible = ตรวจเทียบไม่ได้
+Msg.Emu.RTFError = RTF ผิดพลาด
+Msg.Emu.CouldNotCreateFile = สร้างไฟล์ไม่ได้
+Msg.Emu.AddrBackwards = ตำแหน่งกลับด้านหรือเปล่า?
+Msg.Emu.ErrorWithAddresses = ตำแหน่งผิดพลาด
+Msg.Emu.NotInitialized = ยังไม่ได้เริ่มต้นอีมูเลเตอร์
+
+# ==========================================================================
+# Messages: File Operations
+# ==========================================================================
+Msg.File.CouldNotOpenBin = เปิด Bin ไม่ได้
+Msg.File.FailedToOpenBin = เปิดไฟล์ Bin ไม่สำเร็จ
+Msg.File.CouldNotSaveBin = บันทึก Bin ไม่ได้
+Msg.File.CouldNotEncrypt = บันทึก Bin ไม่ได้ เข้ารหัสไฟล์ไม่สำเร็จ
+Msg.File.CouldNotWriteLog = เขียนไฟล์ประวัติการแก้ไขไม่ได้
+Msg.File.PleaseDropOne = กรุณาลากวางทีละไฟล์
+Msg.File.UnknownFormat = ไม่รู้จักรูปแบบไฟล์: เปิดไฟล์ที่ลากมาไม่สำเร็จ
+Msg.File.TunerProError = TunerPro ผิดพลาด
+
+# ==========================================================================
+# Messages: Miscellaneous
+# ==========================================================================
+Msg.PatchFailed = แพตช์ไม่สำเร็จ
+Msg.PatchSuccess = แพตช์สำเร็จ
+Msg.PatchFromS19 = แพตช์จาก S19
+Msg.NoHardware = ไม่พบฮาร์ดแวร์ที่รองรับ
+Msg.NoHardwareTitle = ไม่มีฮาร์ดแวร์
+Msg.MismatchedADX = ADX ปัจจุบันไม่ตรงกับที่ระบุใน XDF
+Msg.MismatchedADXTitle = ไฟล์ ADX กับ XDF ไม่ตรงกัน
+Msg.ErrorOpeningXDF = เปิด XDF ผิดพลาด
+Msg.ErrorImportingECU = นำเข้า ECU ผิดพลาด
+Msg.SmoothFailed = ปรับเรียบไม่สำเร็จ ต้องเลือกอย่างน้อย 3 แถว และ 3 คอลัมน์
+Msg.SmoothCoefficient = ค่าปรับต้องอยู่ระหว่าง 0 ถึง 0.99
+Msg.SmoothFailedTE = ปรับเรียบไม่สำเร็จ ตรวจส่วนที่เลือกและคุณสมบัติตารางอีกครั้ง
+Msg.SmoothCoeffTE = สัมประสิทธิ์ต้องอยู่ระหว่าง 0 ถึง 0.99
+Msg.InterpFailed = อินเตอร์โพเลตไม่สำเร็จ
+Msg.InterpError = ฟังก์ชันอินเตอร์โพเลตผิดพลาด!
+Msg.XDFParamChanged = คุณสมบัติพารามิเตอร์ XDF เปลี่ยนไป
+Msg.TableModifiedByOther = ข้อมูลในตารางนี้ถูกแก้จากตัวแก้ไขหรือคำสั่งอื่น แต่คุณแก้ตรงนี้ไว้ด้วย ทิ้งการแก้ไขและโหลดใหม่ไหม?
+Msg.FlagModifiedByOther = ข้อมูลในแฟล็กนี้ถูกแก้จากตัวแก้ไขอื่น แต่คุณแก้ไว้ด้วย ทิ้งการแก้ไขและโหลดใหม่ไหม?
+Msg.ScalarModifiedByOther = ข้อมูลในสเกลาร์นี้ถูกแก้จากตัวแก้ไขอื่น แต่คุณแก้ไว้ด้วย ทิ้งการแก้ไขและโหลดใหม่ไหม?
+Msg.CompareBinLoadFail = โหลด Bin เปรียบเทียบไม่สำเร็จ
+Msg.LaunchFailure = เปิดโปรแกรมไม่สำเร็จ
+Msg.CouldNotOpenLog = เปิดล็อกไม่ได้
+Msg.LogRecordFailed = สร้างไฟล์ล็อกชั่วคราวไม่ได้
+Msg.LogSaveFailed = บันทึกล็อกไม่สำเร็จ สำรองล็อกไว้ในโฟลเดอร์ Documents ชื่อ "temp.xdl"
+Msg.MissingPlugin = ขาดปลั๊กอินที่ต้องใช้
+Msg.ADXLoadFailure = โหลด ADX ไม่สำเร็จ
+Msg.DuplicateMask = มี Mask นี้อยู่แล้ว
+Msg.DuplicateMaskTitle = Mask ซ้ำ
+Msg.KeyComboInUse = ปุ่มลัดนี้ถูกใช้แล้ว
+Msg.InvalidCombo = ปุ่มลัดไม่ถูกต้อง
+Msg.CSVNoFields = ไม่ได้ระบุฟิลด์ที่จะนำเข้า
+Msg.CSVNoObjType = นำเข้าไม่ได้ถ้าไม่ระบุฟิลด์ชนิดอ็อบเจ็กต์
+Msg.CSVImportError = นำเข้า CSV ผิดพลาด
+Msg.ADLNotSupported = ไม่รองรับล็อกรูปแบบ ADL แล้ว
+Msg.CouldNotOpenSettings = เปิดไฟล์ตั้งค่าไม่ได้
+Msg.ConfirmSkipPorts = ยืนยันการข้ามพอร์ต
+Msg.FailedSaveADXEncrypt = บันทึก ADX ไม่สำเร็จ เข้ารหัสไม่ได้
+Msg.FailedSaveADXPath = บันทึก ADX ไม่สำเร็จ ตรวจดูว่าพาธมีอยู่จริงและคุณมีสิทธิ์เขียน
+Msg.BinStackInvalidSize = ขนาดไฟล์ต้องตรงกับขนาด Bin ที่เลือก
+Msg.BinStackInvalidSizeTitle = ขนาดไฟล์ไม่ถูกต้อง
+Msg.BinStackSuccess = รวมไฟล์สำเร็จ!
+Msg.BinStackResults = ผลการรวม
+Msg.BinStackOutputFail = สร้างไฟล์ผลลัพธ์ไม่ได้
+Msg.BinStackInputFail = เปิดไฟล์นำเข้าไม่ได้
+Msg.BinStackLayoutOpenFail = เปิดเลย์เอาต์ไม่ได้
+Msg.BinStackLayoutInvalid = ไฟล์เลย์เอาต์ไม่ถูกต้องหรือเวอร์ชันไม่ตรง
+Msg.BinStackLayoutVersion = เวอร์ชันเลย์เอาต์ใช้ร่วมกันไม่ได้ จึงรีเซ็ตเลย์เอาต์แล้ว (ขออภัย)
+Msg.BinStackLayoutError = เลย์เอาต์ของหน้ารวม/แยก Bin ผิดพลาด
+Msg.BinStackLayoutSaveFail = บันทึกเลย์เอาต์ไม่ได้
+
+
+# ==========================================================================
+# XDF Editor: Dialog Strings
+# ==========================================================================
+Dlg.XDFEditor.Apply = ใช้
+Dlg.XDFEditor.Close = ปิด
+Dlg.XDFEditor.OK = ตกลง
+Dlg.XDFBulkEdit.Caption = แก้ไข XDF หลายรายการ
+Dlg.XDFBulkEdit.OK = ตกลง
+Dlg.XDFBulkEdit.Cancel = ยกเลิก
+Dlg.XDFBulkEdit.Signed = มี +/-
+Dlg.XDFBulkEdit.Sign = +/-
+Dlg.XDFBulkEdit.Endianness = ลำดับไบต์
+Dlg.XDFBulkEdit.LSBFirst = ไบต์ต่ำก่อน (LSB ก่อน)
+Dlg.XDFBulkEdit.AddressOffset = ออฟเซ็ต
+Dlg.XDFManageLookups.Caption = จัดการตาราง Lookup ค่า
+Dlg.XDFManageLookups.New = ใหม่...
+Dlg.XDFManageLookups.Edit = แก้ไข...
+Dlg.XDFManageLookups.Delete = ลบ
+Dlg.XDFManageLookups.Close = ปิด
+Dlg.XDFEditLookup.Caption = แก้ไขตาราง Lookup ค่า
+Dlg.XDFEditLookup.Add = เพิ่ม
+Dlg.XDFEditLookup.Remove = นำออก
+Dlg.XDFEditLookup.OK = ตกลง
+Dlg.XDFEditLookup.Cancel = ยกเลิก
+
+# ==========================================================================
+# XDF Editor: MessageBox Strings
+# ==========================================================================
+Msg.XDF.ApplyChanges = ใช้การแก้ไขไหม?
+Msg.XDF.SaveTitle = บันทึกไหม?
+Msg.XDF.AddrOutOfBounds = ตำแหน่งเกินขอบเขต
+Msg.XDF.InvalidSetting = ค่าตั้งไม่ถูกต้อง
+Msg.XDF.DeleteLookupTable = ลบตาราง Lookup
+Msg.XDF.TooManyCols = คอลัมน์มากเกินไป
+Msg.XDF.TooManyRows = แถวมากเกินไป
+Msg.XDF.ChecksumPluginMissing = ไม่พบปลั๊กอิน Checksum
+
+# ==========================================================================
+# ADX Editor: Dialog Strings
+# ==========================================================================
+Dlg.ADXEditor.Caption = ตัวแก้ไข ADX
+Dlg.ADXEditor.Save = บันทึก
+Dlg.ADXEditor.Cancel = ยกเลิก
+Dlg.ADXEditor.SaveAs = บันทึกเป็น...
+Dlg.ADXEditor.AddNewItem = เพิ่มรายการใหม่
+Dlg.ADXEditor.Delete = ลบ
+Dlg.ADXEditor.MakeLocalCopy = ทำสำเนาในไฟล์นี้
+Dlg.ADXHeader.Encrypt = เข้ารหัสไฟล์
+Dlg.ADXCmdChooser.Caption = เลือกชนิดคำสั่ง...
+Dlg.ADXCmdChooser.OK = ตกลง
+Dlg.ADXCmdChooser.Cancel = ยกเลิก
+
+# ==========================================================================
+# ADX Editor: MessageBox Strings
+# ==========================================================================
+Msg.ADX.DefModifiedSave = นิยามมีการแก้ไข บันทึกไหม?
+Msg.ADX.Modified = ADX มีการแก้ไข
+Msg.ADX.InvalidItemData = ข้อมูลรายการไม่ถูกต้อง!
+Msg.ADX.MaxPortsReached = จำนวนพอร์ตที่กำหนดถึงขีดจำกัดแล้ว
+Msg.ADX.PortLimit = ขีดจำกัดพอร์ต
+
+
+# ==========================================================================
+# ADXEditor: Static Control Labels
+# ==========================================================================
+# IDD_ADXBITMASKEDITOR_GEN
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenTitleStat = ชื่อ
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenDescStat = คำอธิบาย
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenPacketoffsetStat = ออฟเซ็ต (H | D)
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenSrcdatasizeStat = ขนาดต้นทาง
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenOperationGbStat = การคำนวณ
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenDisplayontrueStat = แสดงเมื่อ TRUE
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenDisplayonfalseStat = แสดงเมื่อ FALSE
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenBitwiseoperationStat = การดำเนินการบิต
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenOperandStat = Operand
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenResulttotestStat = ผลทดสอบ
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenOperationDescStat = ถ้า DATA <operation> OPERAND = RESULT จะเป็น TRUE ไม่งั้น FALSE
+Dlg.ADX.AdxbitmaskeditorGen.AdxbitmaskeditorGenCmdassocStat = คำสั่งที่ผูกไว้
+# IDD_ADXCMDLSNPACKET_GEN
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenTitleStat = ชื่อ
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenDescStat = คำอธิบาย
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenHeaderbytestringStat = ไบต์ส่วนหัว (Hex คั่นด้วยช่องว่าง เช่น F0 57 29)
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenTimeoutStat = Timeout (ms)
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenBodysizeStat = Body (Dec)
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenPayloadoffsetStat = Payload Offset (Dec)
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenPayloadsizeStat = Payload Size (Dec)
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenFooterbytestringStat = ไบต์ท้าย (Hex คั่นด้วยช่องว่าง เช่น F0 57 29)
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenPackettypeStat = ชนิดแพ็กเก็ต
+Dlg.ADX.AdxcmdlsnpacketGen.AdxcmdlsnpacketGenBaudStat = บอด (0 = เดิม)
+# IDD_ADXCMDLSNSILENCE_GEN
+Dlg.ADX.AdxcmdlsnsilenceGen.AdxcmdlsnsilenceGenTitleStat = ชื่อ
+Dlg.ADX.AdxcmdlsnsilenceGen.AdxcmdlsnsilenceGenDescStat = คำอธิบาย
+Dlg.ADX.AdxcmdlsnsilenceGen.AdxcmdlsnsilenceGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxcmdlsnsilenceGen.AdxcmdlsnsilenceGenSilencelengthStat = ช่วงเงียบ (ms)
+Dlg.ADX.AdxcmdlsnsilenceGen.AdxcmdlsnsilenceGenTimeoutStat = Timeout (ms)
+Dlg.ADX.AdxcmdlsnsilenceGen.AdxcmdlsnsilenceGenBaudStat = บอด (0 = เดิม)
+# IDD_ADXCMDMACRO_GEN
+Dlg.ADX.AdxcmdmacroGen.AdxcmdmacroGenTitleStat = ชื่อ
+Dlg.ADX.AdxcmdmacroGen.AdxcmdmacroGenDescStat = คำอธิบาย
+Dlg.ADX.AdxcmdmacroGen.AdxcmdmacroGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxcmdmacroGen.AdxcmdmacroGenMacrorepeatcountStat = จำนวนรอบมาโคร
+Dlg.ADX.AdxcmdmacroGen.AdxcmdmacroGenEntryparametersGbStat = ค่าของรายการย่อย
+Dlg.ADX.AdxcmdmacroGen.AdxcmdmacroGenEntryrepeatcountStat = จำนวนรอบรายการ
+Dlg.ADX.AdxcmdmacroGen.AdxcmdmacroGenManuallysendableStat = ส่งเองได้
+# IDD_ADXCMDSNDCOMMAND_GEN
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenTitleStat = ชื่อ
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenDescStat = คำอธิบาย
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenHexcmdstringStat = คำสั่ง Hex (เช่น 89 0F A2)
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenChecksumStat = Checksum
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenBaudStat = บอด (0 = เดิม)
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenManuallysendableStat = ส่งเองได้
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenAsciistringStat = ASCII
+Dlg.ADX.AdxcmdsndcommandGen.AdxcmdsndcommandGenPurgebeforesendingStat = ล้างบัฟเฟอร์ก่อนส่ง
+# IDD_ADXCMDSCRIPT_GEN (standalone Script command)
+Dlg.ADX.AdxScriptGen.TitleStat = ชื่อ
+Dlg.ADX.AdxScriptGen.UniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxScriptGen.DescStat = คำอธิบาย
+Dlg.ADX.AdxScriptGen.ScriptStat = สคริปต์
+Dlg.ADX.AdxScriptGen.CheckSyntax = ตรวจไวยากรณ์
+Dlg.ADX.AdxScriptGen.RefStat = อ้างอิงย่อ
+# IDD_ADXCMDSNDCOMMAND_SCRIPT (on-send script tab)
+Dlg.ADX.AdxSndScript.Help = ทำงานก่อนส่งคำสั่ง ใช้ set_param("Label", value) เพื่อเติมฟิลด์ [Label] โดยไม่ต้องถาม (macroiter คือรอบปัจจุบัน)
+Dlg.ADX.AdxSndScript.CheckSyntax = ตรวจไวยากรณ์
+Dlg.ADX.AdxSndScript.RefStat = อ้างอิงย่อ
+# IDD_ADXCMDLSNPACKET_SCRIPT (on-reply script tab)
+Dlg.ADX.AdxLsnScript.Help = ทำงานหลังรับแพ็กเก็ต Payload อยู่ในบัฟเฟอร์ "reply" (ยาว replylen ไบต์) ให้นำไปต่อท้ายบัฟเฟอร์ที่ตั้งชื่อไว้
+Dlg.ADX.AdxLsnScript.CheckSyntax = ตรวจไวยากรณ์
+Dlg.ADX.AdxLsnScript.RefStat = อ้างอิงย่อ
+# IDD_ADXVALUEEDITOR_SCRIPT (display/format script tab)
+Dlg.ADX.AdxValScript.Help = ทำงานหลังสูตรของ Value นี้ สร้างข้อความด้วย text_append*/dtc_format แล้วเรียก set_text() เพื่อแสดงผล (ถ้าไม่เรียกจะใช้รูปแบบปกติ)
+Dlg.ADX.AdxValScript.CheckSyntax = ตรวจไวยากรณ์
+Dlg.ADX.AdxValScript.RefStat = อ้างอิงย่อ
+# IDD_ADXCMDTRIGGER_GEN
+Dlg.ADX.AdxcmdtriggerGen.AdxcmdtriggerGenTitleStat = ชื่อ
+Dlg.ADX.AdxcmdtriggerGen.AdxcmdtriggerGenDescStat = คำอธิบาย
+Dlg.ADX.AdxcmdtriggerGen.AdxcmdtriggerGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxcmdtriggerGen.AdxcmdtriggerGenTriggertypesStat = ทริกเกอร์ (Ctrl + คลิกเลือกหลายอัน)
+# IDD_ADXDASHBOARDEDITOR_GEN
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenTitleStat = ชื่อ
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenDescStat = คำอธิบาย
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenLeftStat = ซ้าย
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenGaugelocationGbStat = ตำแหน่งเกจ (%)
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenTopStat = บน
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenBottomStat = ล่าง
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenRightStat = ขวา
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenGaugepropertiesGbStat = คุณสมบัติเกจ
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenBackgroundcolorStat = สีพื้นหลัง
+Dlg.ADX.AdxdashboardeditorGen.AdxdashboardeditorGenNeedlearcStat = องศาเข็ม (Deg)
+# IDD_ADXHEADEREDITOR
+Dlg.ADX.Adxheadereditor.AdxheadereditorAuthorStat = ผู้สร้าง
+Dlg.ADX.Adxheadereditor.AdxheadereditorVersionStat = เวอร์ชัน
+Dlg.ADX.Adxheadereditor.AdxheadereditorDescStat = คำอธิบาย
+Dlg.ADX.Adxheadereditor.AdxheadereditorConnectioncommandStat = คำสั่งเชื่อมต่อ
+Dlg.ADX.Adxheadereditor.AdxheadereditorMonitorcommandStat = คำสั่งมอนิเตอร์
+Dlg.ADX.Adxheadereditor.AdxheadereditorDisconnectcommandStat = คำสั่งตัดการเชื่อมต่อ
+Dlg.ADX.Adxheadereditor.AdxheadereditorOpenpasswordStat = รหัสเปิด (ไม่บังคับ)
+Dlg.ADX.Adxheadereditor.AdxheadereditorEditpasswordStat = รหัสแก้ไข (ไม่บังคับ)
+Dlg.ADX.Adxheadereditor.AdxheadereditorPausecommandStat = คำสั่งพัก
+Dlg.ADX.Adxheadereditor.AdxheadereditorUnpausecommandStat = คำสั่งเลิกพัก
+# IDD_ADXHEADEREDITORTAB2
+Dlg.ADX.Adxheadereditortab2.Adxheadereditortab2PluginsGbStat = ปลั๊กอินที่จำเป็นและเสริม
+Dlg.ADX.Adxheadereditortab2.Adxheadereditortab2NewitemdefaultsGbStat = ค่าเริ่มต้นรายการใหม่
+Dlg.ADX.Adxheadereditortab2.Adxheadereditortab2SizeStat = Size
+Dlg.ADX.Adxheadereditortab2.Adxheadereditortab2OutputtypeStat = ชนิดเอาต์พุต
+Dlg.ADX.Adxheadereditortab2.Adxheadereditortab2SigdigitsStat = เลขนัยสำคัญ
+Dlg.ADX.Adxheadereditortab2.ChannelsGbStat = ช่องข้อมูล
+Dlg.ADX.Adxheadereditortab2.ChannelsSelect = เลือกช่องข้อมูล...
+Dlg.ADX.Adxheadereditortab2.ChannelsEnable = ใช้ช่องข้อมูล
+Dlg.ADX.Adxheadereditortab2.ChannelsDisabled = (ปิดอยู่)
+Dlg.ADX.Adxheadereditortab2.NoChannels = ไม่ได้ใช้ช่องข้อมูลจากปลั๊กอิน
+Dlg.ADX.Adxheadereditortab2.ChannelCount = %u ช่องจาก %s
+Dlg.ADX.Adxheadereditortab2.ChannelsUnavailable = เลือกช่องข้อมูลได้เมื่อเปิดตัวแก้ไขนี้จาก TunerPro เท่านั้น
+# IDD_ADXHEADEREDITOR_PORTS
+Dlg.ADX.AdxheadereditorPorts.AdxheadereditorPortsStat = กำหนดพอร์ตแบบตั้งชื่อพร้อมค่าซีเรียลของแต่ละพอร์ต คำสั่งสามารถผูกกับพอร์ตที่ระบุได้
+
+Dlg.ADX.AdxheadereditorIncludes.IncStat = ไฟล์ Include (ลิงก์สด อ่านใหม่ทุกครั้งที่เปิด ADX นี้)
+Dlg.ADX.AdxheadereditorIncludes.MergedStat = ไฟล์ที่รวมแล้ว (คัดลอกเนื้อหาเข้า ADX นี้ และจำไว้เพื่อให้รวมซ้ำแล้วอัปเดต)
+Dlg.ADX.AdxheadereditorIncludes.Add = เพิ่มใหม่
+Dlg.ADX.AdxheadereditorIncludes.Edit = แก้ไขที่เลือก
+Dlg.ADX.AdxheadereditorIncludes.Delete = ลบที่เลือก
+Dlg.ADX.AdxheadereditorIncludes.MergedForget = ลืมที่เลือก
+Dlg.ADX.AdxheadereditorIncludes.OverrideStat = สำเนาในไฟล์นี้ (สำเนาที่แก้แล้วของรายการ Include ซึ่งบังตัวต้นฉบับ)
+Dlg.ADX.AdxheadereditorIncludes.OverrideSelect = ไปที่รายการ
+Dlg.ADX.AdxheadereditorIncludes.OverrideRestore = คืนค่าต้นฉบับ
+
+Dlg.ADX.AdxheaderIncData.PathStat = พาธ
+Dlg.ADX.AdxheaderIncData.FlagsGb = นำเข้า
+Dlg.ADX.AdxheaderIncData.NoteStat = บันทึกจะเก็บลิงก์สดไปยังไฟล์นี้ ส่วนรวมตอนนี้จะคัดลอกเนื้อหาที่เลือกเข้า ADX นี้ถาวร ถ้ารวมไฟล์เดิมซ้ำจะอัปเดตของเดิมแทนการเพิ่มซ้ำ
+Dlg.ADX.AdxheaderIncData.Browse = เลือก...
+Dlg.ADX.AdxheaderIncData.FlagObjects = รายการ (คำสั่ง ค่า บิตมาสก์ Lookup ลิสต์ แดชบอร์ด มอนิเตอร์ รหัสปัญหา)
+Dlg.ADX.AdxheaderIncData.FlagPluginDeps = ปลั๊กอินที่ต้องใช้
+Dlg.ADX.AdxheaderIncData.FlagChannelSets = ชุดช่องข้อมูล (สำหรับพอร์ตที่ ADX นี้ยังไม่มีชุด)
+Dlg.ADX.AdxheaderIncData.Merge = รวมตอนนี้...
+Dlg.ADX.AdxheaderIncData.Save = บันทึก
+Dlg.ADX.AdxheaderIncData.Cancel = ยกเลิก
+
+Dlg.ADX.AdxMergePreview.Caption = ตัวอย่างการรวม
+Dlg.ADX.AdxMergePreview.SelAll = เลือกหมด
+Dlg.ADX.AdxMergePreview.SelNone = ไม่เลือก
+Dlg.ADX.AdxMergePreview.Merge = รวม
+Dlg.ADX.AdxMergePreview.Cancel = ยกเลิก
+
+Msg.ADX.Inc.Title = Include
+Msg.ADX.Inc.NoPath = กรุณาระบุไฟล์ที่จะ Include
+Msg.ADX.Inc.SelectFile = เลือกไฟล์ Include...
+Msg.ADX.Inc.Warning = ไฟล์ Include บางไฟล์ของ ADX นี้ใช้ไม่ได้:\n\n%s
+Msg.ADX.ViewOnly = มาจากไฟล์ Include ดูได้อย่างเดียว ถ้าจะแก้ให้กดทำสำเนาในไฟล์นี้
+Msg.ADX.LocalCopyFailed = คัดลอกรายการนี้ไม่ได้ จึงแก้ตรงนี้ไม่ได้
+Msg.ADX.Override.Title = สำเนาในไฟล์นี้
+Msg.ADX.Override.LineNoCopy = %s  (ไม่มีสำเนาในไฟล์นี้)
+Msg.ADX.Override.LineNoOriginal = %s  [%s]  (ไม่พบต้นฉบับในไฟล์ Include)
+Msg.ADX.Override.NoCopy = ADX นี้ไม่มีสำเนาที่ใช้ ID นั้น
+Msg.ADX.Override.RestoreConfirm = แทนที่สำเนา "%s" ด้วยต้นฉบับจากไฟล์ Include ไหม?\n\nสิ่งที่แก้ในสำเนาจะหายไป
+Msg.ADX.Override.RestoreFailed = ไฟล์ Include ไม่มีรายการนี้แล้ว จึงเก็บสำเนาไว้
+Msg.ADX.CantDeleteIncluded = รายการนี้มาจากไฟล์ Include จึงลบตรงนี้ไม่ได้ ให้ไปแก้ที่ไฟล์ Include แทน
+Msg.ADX.Merge.Title = รวม
+Msg.ADX.Merge.NoPath = กรุณาระบุไฟล์ที่จะรวม
+Msg.ADX.Merge.NoContent = เลือกเนื้อหาที่จะรวมอย่างน้อยหนึ่งชนิด
+Msg.ADX.Merge.Failed = รวมไฟล์ไม่สำเร็จ
+Msg.ADX.Merge.NothingToMerge = ไฟล์ที่เลือกไม่มีเนื้อหาชนิดที่คุณเลือกให้รวม
+Msg.ADX.Merge.AlsoIncluded = "%s" ถูก Include ใน ADX นี้แบบลิงก์สดอยู่แล้ว ถ้ารวมอีกเนื้อหาจะซ้ำตอนโหลด ADX ครั้งต่อไป ให้ลบ Include ก่อน หรือรวมไฟล์อื่น\n\nจะรวมเลยไหม?
+Msg.ADX.Merge.ForgetConfirm = ลืมประวัติการรวมของ "%s" ไหม?\n\nเนื้อหาที่รวมแล้วยังอยู่ใน ADX นี้ แต่ถ้ารวมไฟล์นั้นอีกจะเพิ่มทุกอย่างเป็นรายการใหม่
+Msg.ADX.Merge.LedgerLine = %s  (%u รายการ)
+Msg.ADX.Merge.Summary = กำลังรวม %s เข้า ADX นี้: ใหม่ %u, เขียนทับ %u, เพิ่มกลับ %u, ใช้ไม่ได้ %u เอาเครื่องหมายถูกออกถ้าไม่ต้องการแตะรายการนั้น
+Msg.ADX.Merge.Done = รวม %s เข้า ADX นี้แล้ว
+Msg.ADX.Merge.ResultLine = \n%s: เพิ่ม %u, อัปเดต %u, ข้าม %u
+Msg.ADX.Merge.Kind.Object = รายการ
+Msg.ADX.Merge.Kind.PluginDep = ปลั๊กอินที่ต้องใช้
+Msg.ADX.Merge.Kind.ChannelSet = ชุดช่องข้อมูล
+Msg.ADX.Merge.Col.Type = ชนิด
+Msg.ADX.Merge.Col.Name = ชื่อ
+Msg.ADX.Merge.Col.Action = การทำงาน
+Msg.ADX.Merge.Col.Details = รายละเอียด
+Msg.ADX.Merge.Action.New = เพิ่ม
+Msg.ADX.Merge.Action.Overwrite = เขียนทับ
+Msg.ADX.Merge.Action.Restore = เพิ่มกลับ
+Msg.ADX.Merge.Action.Conflict = ข้าม
+Msg.ADX.Merge.Detail.IDInUse = ID นี้ถูกใช้โดยรายการอื่นที่ไม่เกี่ยวข้อง จะกำหนด ID ใหม่ให้
+Msg.ADX.Merge.Detail.Overwrite = แทนที่รายการที่เคยรวมจากไฟล์นี้
+Msg.ADX.Merge.Detail.Restore = เคยรวมแล้ว แต่ถูกลบออกจาก ADX นี้ภายหลัง
+Msg.ADX.Merge.Detail.Conflict = ชนิดไม่ตรงกับรายการที่เคยรวมไว้
+Msg.ADX.Merge.Detail.ChannelConflict = ADX นี้มีชุดช่องสำหรับพอร์ตนี้อยู่แล้ว และไม่ได้มาจากการรวม
+# IDD_ADXHISTOEDITOR_COLS
+Dlg.ADX.AdxhistoeditorCols.AdxhistoeditorColsColcountStat = จำนวนคอลัมน์
+Dlg.ADX.AdxhistoeditorCols.AdxhistoeditorColsMinStat = Min
+Dlg.ADX.AdxhistoeditorCols.AdxhistoeditorColsMaxStat = Max
+Dlg.ADX.AdxhistoeditorCols.AdxhistoeditorColsColumnobjectStat = คอลัมน์ (X)
+# IDD_ADXHISTOEDITOR_GEN
+Dlg.ADX.AdxhistoeditorGen.AdxhistoeditorGenTitleStat = ชื่อ
+Dlg.ADX.AdxhistoeditorGen.AdxhistoeditorGenDescStat = คำอธิบาย
+Dlg.ADX.AdxhistoeditorGen.AdxhistoeditorGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxhistoeditorGen.AdxhistoeditorGenHistorysizeStat = ขนาดประวัติ (ตัวอย่าง)
+Dlg.ADX.AdxhistoeditorGen.AdxhistoeditorGenCommandassociationStat = คำสั่งที่ผูกไว้
+Dlg.ADX.AdxhistoeditorGen.AdxhistoeditorGenOutputzobjectStat = เอาต์พุต (Z)
+Dlg.ADX.AdxhistoeditorGen.AdxhistoeditorGenGatetrackerStat = ตัวติดตามสถานะเกต
+Dlg.ADX.AdxhistoeditorGen.AdxhistoeditorGenGatestateStat = สถานะที่ต้องการ
+# IDD_ADXHISTOEDITOR_ROWS
+Dlg.ADX.AdxhistoeditorRows.AdxhistoeditorRowsRowcountStat = จำนวนแถว
+Dlg.ADX.AdxhistoeditorRows.AdxhistoeditorRowsMinStat = Min
+Dlg.ADX.AdxhistoeditorRows.AdxhistoeditorRowsMaxStat = Max
+Dlg.ADX.AdxhistoeditorRows.AdxhistoeditorRowsRowobjectStat = แถว (Y)
+# IDD_ADXLISTVIEWEDITOR_GEN
+Dlg.ADX.AdxlistvieweditorGen.AdxlistvieweditorGenTitleStat = ชื่อ
+Dlg.ADX.AdxlistvieweditorGen.AdxlistvieweditorGenDescStat = คำอธิบาย
+Dlg.ADX.AdxlistvieweditorGen.AdxlistvieweditorGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxlistvieweditorGen.AdxlistvieweditorGenSelectionpropertiesGbStat = คุณสมบัติการเลือก
+Dlg.ADX.AdxlistvieweditorGen.AdxlistvieweditorGenTextcolorStat = สีข้อความ
+Dlg.ADX.AdxlistvieweditorGen.AdxlistvieweditorGenSeparatortextStat = ข้อความคั่น
+# IDD_ADXTROUBLECODESEDITOR_GEN
+Dlg.ADX.TroubleCodes.Title = ชื่อ
+Dlg.ADX.TroubleCodes.UniqueID = ID เฉพาะ
+Dlg.ADX.TroubleCodes.Desc = คำอธิบาย
+Dlg.ADX.TroubleCodes.Source = รหัสมาจาก
+Dlg.ADX.TroubleCodes.Port = พอร์ต
+Dlg.ADX.TroubleCodes.ClearCmd = คำสั่งล้าง
+Dlg.ADX.TroubleCodes.AddBitmasks = เพิ่มบิตมาสก์...
+Dlg.ADX.TroubleCodes.AddNumber = เพิ่มค่ารหัส...
+Dlg.ADX.TroubleCodes.AddSAE = เพิ่มค่า SAE...
+Dlg.ADX.TroubleCodes.AddDesc = เพิ่มคำอธิบาย
+Dlg.ADX.TroubleCodes.Remove = นำออก
+Dlg.ADX.TroubleCodes.Up = เลื่อนขึ้น
+Dlg.ADX.TroubleCodes.Down = ลง
+Dlg.ADX.TroubleCodes.EntryGroup = รายการที่เลือก
+Dlg.ADX.TroubleCodes.Code = รหัส
+Dlg.ADX.TroubleCodes.EntryDesc = คำอธิบาย
+Msg.ADX.TroubleCodes.SourceADX = ข้อมูลในนิยามนี้
+Msg.ADX.TroubleCodes.SourcePlugin = อินเทอร์เฟซของพอร์ต (วินิจฉัยผ่านปลั๊กอิน)
+Msg.ADX.TroubleCodes.DefaultPort = (พอร์ตเริ่มต้น)
+Msg.ADX.TroubleCodes.NoClearCmd = (ไม่มี)
+Msg.ADX.TroubleCodes.ColCode = รหัส
+Msg.ADX.TroubleCodes.ColFormat = แบบ
+Msg.ADX.TroubleCodes.ColItem = รายการ
+Msg.ADX.TroubleCodes.ColDesc = คำอธิบาย
+Msg.ADX.TroubleCodes.FormatBit = บิต
+Msg.ADX.TroubleCodes.FormatNumber = ค่ารหัส
+Msg.ADX.TroubleCodes.FormatSAE = ค่า SAE
+Msg.ADX.TroubleCodes.FormatDesc = คำอธิบาย
+Msg.ADX.TroubleCodes.MissingItem = <ไม่พบรายการ>
+Msg.ADX.TroubleCodes.NoID = ไม่ได้ระบุ ID กรุณาระบุ ID ที่ไม่ซ้ำ
+Msg.ADX.TroubleCodes.IDNotUnique = ID ซ้ำ กรุณาระบุ ID ที่ไม่ซ้ำ
+Msg.ADX.TroubleCodes.NeedsCode = รายการที่ %u ต้องมีรหัส
+Msg.ADX.TroubleCodes.NeedsItem = รายการที่ %u อ้างถึงรายการที่ไม่มีแล้ว ให้นำออกหรือเพิ่มรายการนั้นกลับมา
+Msg.ADX.TroubleCodes.NoCodeFound = อ่านรหัสจากชื่อบิตมาสก์เหล่านี้ไม่ได้ รหัสจึงว่างอยู่ ให้พิมพ์เองในช่องรายการที่เลือก:
+Dlg.ADX.StateTracker.Title = ชื่อ
+Dlg.ADX.StateTracker.UniqueID = ID เฉพาะ
+Dlg.ADX.StateTracker.Desc = คำอธิบาย
+Dlg.ADX.StateTracker.Default = เมื่อไม่ตรงสถานะใดเลย
+Dlg.ADX.StateTracker.AddState = เพิ่มสถานะ
+Dlg.ADX.StateTracker.RemoveState = นำสถานะออก
+Dlg.ADX.StateTracker.StateUp = เลื่อนขึ้น
+Dlg.ADX.StateTracker.StateDown = ลง
+Dlg.ADX.StateTracker.StateText = ข้อความ
+Dlg.ADX.StateTracker.AddCondition = เพิ่มเงื่อนไข...
+Dlg.ADX.StateTracker.RemoveCondition = นำเงื่อนไขออก
+Dlg.ADX.StateTracker.ConditionGroup = เงื่อนไขที่เลือก
+Dlg.ADX.StateTracker.Above = สูงกว่า
+Dlg.ADX.StateTracker.OrEqual = หรือเท่ากับ
+Dlg.ADX.StateTracker.Below = ต่ำกว่า
+Dlg.ADX.StateTracker.BitmaskSet = บิตเป็นจริง
+Dlg.ADX.StateTracker.BitmaskNotSet = บิตไม่เป็นจริง
+Dlg.ADX.StateTracker.TextColor = สีข้อความ
+Dlg.ADX.StateTracker.BackColor = สีพื้นหลัง
+Msg.ADX.StateTracker.ColStateText = เอาต์พุต
+Msg.ADX.StateTracker.ColConditionCount = เงื่อนไข
+Msg.ADX.StateTracker.ColItem = รายการ
+Msg.ADX.StateTracker.ColCondition = เงื่อนไข
+Msg.ADX.StateTracker.MissingItem = <ไม่พบรายการ>
+Msg.ADX.StateTracker.IsSet = เป็นจริง
+Msg.ADX.StateTracker.IsNotSet = ไม่เป็นจริง
+Msg.ADX.StateTracker.And = และ
+Msg.ADX.StateTracker.AnyValue = (ค่าใดก็ได้)
+Msg.ADX.StateTracker.NoID = ไม่ได้ระบุ ID กรุณาระบุ ID ที่ไม่ซ้ำ
+Msg.ADX.StateTracker.IDNotUnique = ID ซ้ำ กรุณาระบุ ID ที่ไม่ซ้ำ
+Msg.ADX.StateTracker.NeedsItem = เงื่อนไขที่ %u ของสถานะที่ %u อ้างถึงรายการที่ไม่มีแล้ว ให้นำออกหรือเพิ่มรายการนั้นกลับมา
+Msg.ADX.StateTracker.NeedsRange = เงื่อนไขที่ %u ของสถานะที่ %u ต้องมีค่าต่ำสุดหรือสูงสุด
+Msg.ADX.StateTracker.BadRange = เงื่อนไขที่ %u ของสถานะที่ %u มีค่าต่ำสุดมากกว่าค่าสูงสุด
+Msg.ADX.StateTracker.TreeRoot = ตัวติดตามสถานะ
+# IDD_ADXLOOKUPEDITOR_GEN
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenTitleStat = ชื่อ
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenDescStat = คำอธิบาย
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenInputtypeStat = ชนิดอินพุต
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenOutputtypeStat = ชนิดเอาต์พุต
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenLookupmodeStat = โหมด Lookup
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenInputStat = เข้า
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenOutputStat = ออก
+Dlg.ADX.AdxlookupeditorGen.AdxlookupeditorGenTableentryGbStat = ค่าในตาราง
+# IDD_ADXMONITOREDITOR_GEN
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenTitleStat = ชื่อ
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenDescStat = คำอธิบาย
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenItemtodisplayStat = รายการที่แสดง
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenSelectedmonitorseriespropertiesGbStat = คุณสมบัติชุดข้อมูลมอนิเตอร์ที่เลือก
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenLinewidthStat = ความหนาเส้น (px)
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenBackgroundcolorStat = สีพื้นหลัง
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenPlotbackgroundcolorStat = สีพื้นกราฟ
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenTitlecolorStat = สีชื่อ
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenPlotoutlinecolorStat = สีขอบกราฟ
+Dlg.ADX.AdxmonitoreditorGen.AdxmonitoreditorGenTimeaxiscolorStat = สีแกนเวลา
+# IDD_ADXVALUEEDITOR_CONV
+Dlg.ADX.AdxvalueeditorConv.AdxvalueeditorConvEquationStat = สูตร
+Dlg.ADX.AdxvalueeditorConv.AdxvalueeditorConvArgumentsStat = อาร์กิวเมนต์
+Dlg.ADX.AdxvalueeditorConv.AdxvalueeditorConvArgumentparametersGbStat = ค่าอาร์กิวเมนต์
+Dlg.ADX.AdxvalueeditorConv.AdxvalueeditorConvArgumenttypeStat = ชนิดอาร์กิวเมนต์
+Dlg.ADX.AdxvalueeditorConv.AdxvalueeditorConvLinkedobjectidStat = ID ที่ลิงก์
+Dlg.ADX.AdxvalueeditorConv.AdxvalueeditorConvOutputformatStat = รูปแบบเอาต์พุต
+Dlg.ADX.AdxvalueeditorConv.AdxvalueeditorConvOutputdigitsStat = หลักเอาต์พุต
+Dlg.ADX.AdxvalueeditorConv.AdxvalueeditorConvLookuptableStat = ตาราง Lookup
+# IDD_ADXVALUEEDITOR_GEN
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenTitleStat = ชื่อ
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenDescStat = คำอธิบาย
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenUniqueidStat = ID เฉพาะ
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenUnitsdisplayStat = หน่วยที่แสดง
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenPacketoffsetStat = ออฟเซ็ต (H | D)
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenSourcedatasizeStat = ขนาดต้นทาง
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenRangelowStat = ช่วงต่ำ
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenRangehighStat = ช่วงสูง
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenAlarmlowStat = เตือนต่ำ
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenAlarmhighStat = เตือนสูง
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenCommandassociationStat = คำสั่งที่ผูกไว้
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenDatatypeStat = ชนิดข้อมูล
+Dlg.ADX.AdxvalueeditorGen.AdxvalueeditorGenStockunitsStat = หน่วยเดิม
+Dlg.ADX.AdxvalueeditorGen.DataChannelStat = ช่องข้อมูล
+Dlg.ADX.AdxvalueeditorGen.ChannelNone = <ไม่มี>
+# IDD_PORTDEF_EDITOR
+Dlg.ADX.PortdefEditor.PortdefEditorPortidStat = Port ID
+Dlg.ADX.PortdefEditor.PortdefEditorTitleStat = ชื่อ
+Dlg.ADX.PortdefEditor.PortdefEditorBaudrateStat = บอดเรต
+Dlg.ADX.PortdefEditor.PortdefEditorParityStat = พาริตี
+Dlg.ADX.PortdefEditor.PortdefEditorStopbitsStat = สต็อปบิต
+Dlg.ADX.PortdefEditor.PortdefEditorBytesizeStat = ขนาดไบต์ (บิต)
+Dlg.ADX.PortdefEditor.PortdefEditorDefpluginStat = ปลั๊กอิน DA เริ่มต้น
+Dlg.ADX.PortdefEditor.DefPluginNone = (ไม่มี)
+Dlg.ADX.PortdefEditor.DefPluginNotInstalled = ไม่ได้ติดตั้ง
+Dlg.ADX.PortdefEditor.PortdefEditorConnectcmdStat = คำสั่งเชื่อมต่อ
+Dlg.ADX.PortdefEditor.PortdefEditorMonitorcmdStat = คำสั่งมอนิเตอร์
+Dlg.ADX.PortdefEditor.PortdefEditorDisconnectcmdStat = คำสั่งตัดการเชื่อมต่อ
+Dlg.ADX.PortdefEditor.PortdefEditorPausecmdStat = คำสั่งพัก
+Dlg.ADX.PortdefEditor.PortdefEditorUnpausecmdStat = คำสั่งเลิกพัก
+Dlg.ADX.PortdefEditor.EventCmdUseDefault = <ใช้ค่าเริ่มต้น ADX>
+
+# ==========================================================================
+# PromIO: Static Control Labels
+# ==========================================================================
+# IDD_PROM_IO
+Dlg.PromIO.PromIo.PromioSupportedchipsStat = ชิปที่รองรับ
+Dlg.PromIO.PromIo.PromioChipaddrGb = ตำแหน่งชิป
+Dlg.PromIO.PromIo.PromioChipaddrStartStat = ตำแหน่งเริ่ม (Hex)
+Dlg.PromIO.PromIo.PromioChipaddrEndStat = ตำแหน่งท้าย (Hex)
+Dlg.PromIO.PromIo.PromioBufaddrGb = ตำแหน่งบัฟเฟอร์
+Dlg.PromIO.PromIo.PromioBufaddrStartStat = ตำแหน่งเริ่ม (Hex)
+Dlg.PromIO.PromIo.PromioBufaddrEndStat = ตำแหน่งท้าย (Hex)
+Dlg.PromIO.PromIo.PromioProgressStat = คืบหน้า...
+
+# ==========================================================================
+# ScannerProModule: Static Control Labels
+# ==========================================================================
+# IDD_DATALOGEXPORTER
+Dlg.ScannerProModule.Datalogexporter.DatalogexporterItemsAvailableStat = รายการที่ส่งออกได้:
+Dlg.ScannerProModule.Datalogexporter.DatalogexporterExportItemsStat = ส่งออกรายการเหล่านี้:
+Dlg.ScannerProModule.Datalogexporter.DatalogexporterExportFileTypeStat = ชนิดไฟล์ส่งออก
+Dlg.ScannerProModule.Datalogexporter.DatalogexporterLogToExportStat = ล็อกที่ส่งออก:
+# IDD_HISTOGRAMS
+Dlg.ScannerProModule.Histograms.HistogramsHistorytableStat = ตารางประวัติ
+Dlg.ScannerProModule.Histograms.HistogramsViewStat = มุมมอง
+
+# ==========================================================================
+# TunerPro: Static Control Labels
+# ==========================================================================
+# IDD_PORT_ASSIGNMENT
+Dlg.PortAssignment.PortAssignmentStat = เลือกพอร์ตด้านบนเพื่อกำหนดปลั๊กอินและพอร์ต COM ถ้าเว้นอย่างใดอย่างหนึ่งไว้ พอร์ตนั้นจะถูกข้ามในการใช้งานรอบนี้
+
+# ==========================================================================
+# XDFEditor: Static Control Labels
+# ==========================================================================
+# IDD_XDF_BULK_EDIT
+Dlg.XDF.XdfBulkEdit.XdfBulkEditStat = ใช้การแก้ไขต่อไปนี้กับทุกรายการใน XDF:
+Dlg.XDF.XdfBulkEdit.XdfBulkEditOffsetStat = ใส่จำนวนเต็มฐานสิบ +/- ได้
+# IDD_XDF_CONST_ED_ALDL
+Dlg.XDF.XdfConstEdAldl.XdfConstEdAldlCurrdaStat = รายการ DA ที่ลิงก์อยู่:
+Dlg.XDF.XdfConstEdAldl.XdfConstEdAldlLinkmodeStat = โหมดลิงก์
+# IDD_XDF_CONST_ED_GEN
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenVislvlStat = ระดับแสดงผล
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenCatcStat = หมวด C
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenTitleStat = ชื่อ
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenDescStat = คำอธิบาย
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenSizeStat = Size
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenAddrStat = ตำแหน่ง (Hex)
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenOuttypeStat = ชนิดเอาต์พุต
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenCataStat = หมวด A
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenCatbStat = หมวด B
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenDtypeStat = ชนิดข้อมูล
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenUnitsStat = หน่วยเดิม
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenUnitsovrdStat = ใช้หน่วยแทน
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenFileaddrStat = ตำแหน่งไฟล์
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenFinestepStat = ขั้นละเอียด
+Dlg.XDF.XdfConstEdGen.XdfConstEdGenCoarsestepStat = ขั้นหยาบ
+# IDD_XDF_CONST_ED_VALUELOOKUP
+Dlg.XDF.XdfConstEdValuelookup.XdfConstEdValuelookupValueStat = ค่า:
+Dlg.XDF.XdfConstEdValuelookup.XdfConstEdValuelookupStringStat = คำ:
+Dlg.XDF.XdfConstEdValuelookup.XdfConstEdValuelookupGlobalStat = Lookup กลาง:
+# IDD_XDF_EDIT_LOOKUP
+Dlg.XDF.XdfEditLookup.XdfEditLookupNameStat = ชื่อ:
+Dlg.XDF.XdfEditLookup.XdfEditLookupValueStat = ค่า:
+Dlg.XDF.XdfEditLookup.XdfEditLookupStringStat = คำ:
+# IDD_XDF_ED_GEN_CONV
+Dlg.XDF.XdfEdGenConv.XdfEdGenConvExprStat = สูตร
+Dlg.XDF.XdfEdGenConv.XdfEdGenConvVardefGb = นิยามตัวแปร
+Dlg.XDF.XdfEdGenConv.XdfEdGenConvVardefVariablesStat = ตัวแปร
+Dlg.XDF.XdfEdGenConv.XdfEdGenConvVardefVartypeStat = ชนิดตัวแปร
+Dlg.XDF.XdfEdGenConv.XdfEdGenConvVardefAddressStat = ตำแหน่ง
+Dlg.XDF.XdfEdGenConv.XdfEdGenConvVardefLinkeditemStat = ที่ลิงก์
+Dlg.XDF.XdfEdGenConv.XdfEdGenConvVardefRowStat = แถว
+Dlg.XDF.XdfEdGenConv.XdfEdGenConvVardefColumnStat = คอลัมน์
+# IDD_XDF_FLAG_ED_ALDL
+Dlg.XDF.XdfFlagEdAldl.XdfFlagEdAldlDaassocStat = ผูกกับ DA (ยังไม่รองรับ)
+# IDD_XDF_FLAG_ED_GEN
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenTitleStat = ชื่อ
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenDescStat = คำอธิบาย
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenAddrStat = ตำแหน่ง (Hex)
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenBitnumStat = บิตที่
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenVislvlStat = ระดับแสดงผล
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenCataStat = หมวด A
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenCatbStat = หมวด B
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenSrcdatasizeStat = ขนาดต้นทาง
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenCatcStat = หมวด C
+Dlg.XDF.XdfFlagEdGen.XdfFlagEdGenFileaddrStat = ตำแหน่งไฟล์
+# IDD_XDF_FUNC_ED_GEN
+Dlg.XDF.XdfFuncEdGen.XdfFuncEdGenTitleStat = ชื่อ
+Dlg.XDF.XdfFuncEdGen.XdfFuncEdGenDescStat = คำอธิบาย
+Dlg.XDF.XdfFuncEdGen.XdfFuncEdGenNumpointsStat = จำนวนจุด
+Dlg.XDF.XdfFuncEdGen.XdfFuncEdGenCataStat = หมวด A
+Dlg.XDF.XdfFuncEdGen.XdfFuncEdGenCatbStat = หมวด B
+Dlg.XDF.XdfFuncEdGen.XdfFuncEdGenVislvlStat = ระดับแสดงผล
+Dlg.XDF.XdfFuncEdGen.XdfFuncEdGenCatcStat = หมวด C
+# IDD_XDF_FUNC_ED_X
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXXaddrStat = ตำแหน่ง X
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXAddrstepStat = ระยะตำแหน่ง
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXXunitsStat = หน่วย X
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXDatasizeStat = ขนาด X
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXSigdigitsStat = เลขนัยสำคัญ
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXOuttypeStat = ชนิดเอาต์พุต
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXFileaddrStat = ตำแหน่งไฟล์ X
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXFinestepStat = ขั้นละเอียด
+Dlg.XDF.XdfFuncEdX.XdfFuncEdXCoarsestepStat = ขั้นหยาบ
+# IDD_XDF_FUNC_ED_Y
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYYaddrStat = ตำแหน่ง Y
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYAddrstepStat = ระยะตำแหน่ง
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYYunitsStat = หน่วย Y
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYDatasizeStat = ขนาด Y
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYSigdigitsStat = เลขนัยสำคัญ
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYOuttypeStat = ชนิดเอาต์พุต
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYFileaddrStat = ตำแหน่งไฟล์ Y
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYFinestepStat = ขั้นละเอียด
+Dlg.XDF.XdfFuncEdY.XdfFuncEdYCoarsestepStat = ขั้นหยาบ
+# IDD_XDF_HEADER_ED_ALDL
+Dlg.XDF.XdfHeaderEdAldl.XdfHeaderEdAldlDadefStat = ไฟล์นิยาม DA ที่จะลิงก์กับ XDF นี้โดยตรง
+Dlg.XDF.XdfHeaderEdAldl.XdfHeaderEdAldlImplicitStat = การลิงก์ ADX กับ XDF ทำได้ทั้งแบบอัตโนมัติและแบบระบุตรง แบบอัตโนมัติจะจับคู่จากชนิดข้อมูลและหน่วยเดิมของแต่ละรายการ ADX และ XDF
+Dlg.XDF.XdfHeaderEdAldl.XdfHeaderEdAldlExplicitStat = ระบุ ADX ที่ลิงก์ตรงให้ XDF นี้ เพื่อให้รายการ ADX && XDF ที่ลิงก์ตรงจับคู่กันได้แน่นอน
+# IDD_XDF_HEADER_ED_CS_DATA
+Dlg.XDF.XdfHeaderEdCsData.XdfHeaderEdCsDataTitleStat = ชื่อ
+Dlg.XDF.XdfHeaderEdCsData.XdfHeaderEdCsDataDatastartStat = ตำแหน่งเริ่ม
+Dlg.XDF.XdfHeaderEdCsData.XdfHeaderEdCsDataDataendStat = ตำแหน่งท้าย
+Dlg.XDF.XdfHeaderEdCsData.XdfHeaderEdCsDataStoreaddrStat = ตำแหน่งที่เก็บ
+Dlg.XDF.XdfHeaderEdCsData.XdfHeaderEdCsDataStoresizeStat = ขนาดเก็บ
+Dlg.XDF.XdfHeaderEdCsData.XdfHeaderEdCsDataCalcStat = ตัวคำนวณ
+Dlg.XDF.XdfHeaderEdCsData.XdfHeaderEdCsDataDatasizeStat = ขนาด
+Dlg.XDF.XdfHeaderEdCsData.XdfHeaderEdCsDataPluginStat = โมดูลปลั๊กอิน
+# IDD_XDF_HEADER_ED_GEN
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenTitleStat = ชื่อ
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenDescStat = คำอธิบาย
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenAuthorStat = ผู้สร้าง
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenVersionStat = เวอร์ชัน XDF
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenBinsizeStat = Bin Size (Hex)
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenBaseoffsetStat = ออฟเซ็ตฐาน (Hex)
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenNewitemdefGb = ค่าเริ่มต้นรายการใหม่
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenSizeStat = Size
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenOutputtypeStat = ชนิดเอาต์พุต
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenSigdigitsStat = เลขนัยสำคัญ
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenOpenpassStat = รหัสเปิด (ไม่บังคับ)
+Dlg.XDF.XdfHeaderEdGen.XdfHeaderEdGenEditpassStat = รหัสแก้ไข XDF (ไม่บังคับ)
+# IDD_XDF_HEADER_ED_SYNCGROUPS
+Dlg.XDF.XdfHeaderEdSyncgroups.XdfHeaderEdSyncgroupsGroupitemsGb = ในกลุ่ม
+Dlg.XDF.XdfHeaderEdSyncgroups.XdfHeaderEdSyncgroupsGroupnameStat = ชื่อกลุ่ม
+
+Dlg.XDF.XdfHeaderEdIncData.XdfHeaderEdIncDataPathStat = พาธ
+Dlg.XDF.XdfHeaderEdIncData.XdfHeaderEdIncDataFlagsGb = นำเข้า
+Dlg.XDF.XdfHeaderEdIncData.XdfHeaderEdIncDataNoteStat = บันทึกจะเก็บลิงก์สดไปยังไฟล์นี้ ส่วนรวมตอนนี้จะคัดลอกเนื้อหาที่เลือกเข้า XDF นี้ถาวร ถ้ารวมไฟล์เดิมซ้ำจะอัปเดตของเดิมแทนการเพิ่มซ้ำ
+Dlg.XDF.XdfHeaderEdIncData.XdfHeaderEdIncDataMerge = รวมตอนนี้...
+# IDD_XDF_HEADER_ED_INCLUDES
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesIncStat = ไฟล์ Include (ลิงก์สด อ่านใหม่ทุกครั้งที่เปิด XDF นี้)
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesMergedStat = ไฟล์ที่รวมแล้ว (คัดลอกเนื้อหาเข้า XDF นี้ และจำไว้เพื่อให้รวมซ้ำแล้วอัปเดต)
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesAdd = เพิ่มใหม่
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesEdit = แก้ไขที่เลือก
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesDelete = ลบที่เลือก
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesMergedForget = ลืมที่เลือก
+# IDD_XDF_MERGE_PREVIEW
+Dlg.XDF.XdfMergePreview.Caption = ตัวอย่างการรวม
+Dlg.XDF.XdfMergePreview.SelAll = เลือกหมด
+Dlg.XDF.XdfMergePreview.SelNone = ไม่เลือก
+Dlg.XDF.XdfMergePreview.Merge = รวม
+Dlg.XDF.XdfMergePreview.Cancel = ยกเลิก
+# XDF merge messages
+Msg.XDF.Merge.Title = รวม
+Msg.XDF.Merge.NoPath = กรุณาระบุไฟล์ที่จะรวม
+Msg.XDF.Merge.NoContent = เลือกเนื้อหาที่จะรวมอย่างน้อยหนึ่งชนิด
+Msg.XDF.Include.Title = รายการจาก Include
+Msg.XDF.Include.MakeLocalCopyOne = รายการนี้มาจาก XDF ที่ Include ไว้ จึงแก้โดยตรงไม่ได้\n\nทำสำเนาไว้ใน XDF นี้ไหม? สำเนาจะบันทึกไปกับ XDF นี้และใช้แทนรายการจาก Include ส่วนไฟล์ Include จะไม่ถูกแก้
+Msg.XDF.Include.MakeLocalCopyMany = %u รายการในนี้มาจาก XDF ที่ Include ไว้ จึงแก้โดยตรงไม่ได้\n\nทำสำเนาไว้ใน XDF นี้ไหม? สำเนาจะบันทึกไปกับ XDF นี้และใช้แทนรายการจาก Include ส่วนไฟล์ Include จะไม่ถูกแก้
+Msg.XDF.Include.CantDelete = รายการนี้มาจาก XDF ที่ Include ไว้ จึงลบตรงนี้ไม่ได้\n\nให้ทำสำเนาก่อน (แก้ไขรายการ) เพื่อแก้ไข หรือเอา Include ออกที่ส่วนหัว XDF
+Msg.XDF.Include.BulkEdit = มี %u รายการมาจาก XDF ที่ Include ไว้ การแก้ไขรายการเหล่านั้นจะไม่ถูกบันทึก\n\nYes: ทำสำเนาแล้วแก้ไปด้วย\nNo: แก้เฉพาะรายการของ XDF นี้\nCancel: ไม่แก้อะไรเลย
+Msg.XDF.Override.Title = สำเนาในไฟล์นี้
+Msg.XDF.Override.LineNoCopy = %s  (ไม่มีสำเนาในไฟล์นี้)
+Msg.XDF.Override.NotFound = ไม่พบในไฟล์ Include
+Msg.XDF.Override.RestoreConfirm = แทนที่สำเนา "%s" ด้วยต้นฉบับจากไฟล์ Include ไหม?\n\nสิ่งที่แก้ในสำเนาจะหายไป
+Msg.XDF.Override.RestoreFailed = ไฟล์ Include ไม่มีรายการนี้แล้ว จึงเก็บสำเนาไว้
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesOverrideStat = สำเนาในไฟล์นี้ (รายการจากไฟล์ Include ที่ถูกแก้ ต้นฉบับจะถูกซ่อน)
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesOverrideSelect = ไปที่รายการ
+Dlg.XDF.XdfHeaderEdIncludes.XdfHeaderEdIncludesOverrideRestore = คืนค่าต้นฉบับ
+Msg.XDF.Merge.ReadOnly = นิยามนี้อ่านได้อย่างเดียว จึงรวมเนื้อหาเข้าไปไม่ได้
+Msg.XDF.Merge.Failed = รวมไฟล์ไม่สำเร็จ
+Msg.XDF.Merge.NothingToMerge = ไฟล์ที่เลือกไม่มีเนื้อหาชนิดที่คุณเลือกให้รวม
+Msg.XDF.Merge.AlsoIncluded = "%s" ถูก Include ใน XDF นี้แบบลิงก์สดอยู่แล้ว ถ้ารวมอีกเนื้อหาจะซ้ำตอนโหลด XDF ครั้งต่อไป ให้ลบ Include ก่อน หรือรวมไฟล์อื่น\n\nจะรวมเลยไหม?
+Msg.XDF.Merge.ForgetConfirm = ลืมประวัติการรวมของ "%s" ไหม?\n\nเนื้อหาที่รวมแล้วยังอยู่ใน XDF นี้ แต่ถ้ารวมไฟล์นั้นอีกจะเพิ่มทุกอย่างเป็นรายการใหม่แทนการอัปเดตของเดิม
+Msg.XDF.Merge.LedgerLine = %s  (%u รายการ)
+Msg.XDF.Merge.Summary = กำลังรวม %s เข้า XDF นี้: ใหม่ %u, เขียนทับ %u, เพิ่มกลับ %u, ใช้ไม่ได้ %u หมวดจะจับคู่ตามชื่อ (ในไฟล์มี %u หมวด) เอาเครื่องหมายถูกออกถ้าไม่ต้องการแตะรายการนั้น
+Msg.XDF.Merge.Done = รวม %s เข้า XDF นี้แล้ว
+Msg.XDF.Merge.ResultLine = \n%s: เพิ่ม %u, อัปเดต %u, ข้าม %u
+Msg.XDF.Merge.ResultCategories = \nหมวด: เพิ่ม %u
+Msg.XDF.Merge.Kind.Object = อ็อบเจ็กต์
+Msg.XDF.Merge.Kind.ValueLookup = Lookup ค่า
+Msg.XDF.Merge.Kind.Region = ย่านข้อมูล
+Msg.XDF.Merge.Kind.SyncGroup = กลุ่มซิงก์
+Msg.XDF.Merge.Col.Type = ชนิด
+Msg.XDF.Merge.Col.Name = ชื่อ
+Msg.XDF.Merge.Col.Action = การทำงาน
+Msg.XDF.Merge.Col.Details = รายละเอียด
+Msg.XDF.Merge.Action.New = เพิ่ม
+Msg.XDF.Merge.Action.Overwrite = เขียนทับ
+Msg.XDF.Merge.Action.Restore = เพิ่มกลับ
+Msg.XDF.Merge.Action.Conflict = ข้าม
+Msg.XDF.Merge.Detail.IDInUse = ID นี้ถูกใช้โดยรายการอื่นที่ไม่เกี่ยวข้อง จะกำหนด ID ใหม่ให้
+Msg.XDF.Merge.Detail.NameInUse = ชื่อนี้ถูกใช้โดยรายการอื่นที่ไม่เกี่ยวข้อง จะเปลี่ยนชื่อให้
+Msg.XDF.Merge.Detail.Overwrite = แทนที่รายการที่เคยรวมจากไฟล์นี้
+Msg.XDF.Merge.Detail.Restore = เคยรวมแล้ว แต่ถูกลบออกจาก XDF นี้ภายหลัง
+Msg.XDF.Merge.Detail.Conflict = ชนิดไม่ตรงกับรายการที่เคยรวมไว้
+# IDD_XDF_PATCH_ED_GEN
+Dlg.XDF.XdfPatchEdGen.XdfPatchEdGenVislvlStat = ระดับแสดงผล
+Dlg.XDF.XdfPatchEdGen.XdfPatchEdGenTitleStat = ชื่อ
+Dlg.XDF.XdfPatchEdGen.XdfPatchEdGenDescStat = คำอธิบาย
+Dlg.XDF.XdfPatchEdGen.XdfPatchEdGenCataStat = หมวด A
+Dlg.XDF.XdfPatchEdGen.XdfPatchEdGenCatbStat = หมวด B
+Dlg.XDF.XdfPatchEdGen.XdfPatchEdGenEntriesStat = รายการแพตช์:
+Dlg.XDF.XdfPatchEdGen.XdfPatchEdGenCatcStat = หมวด C
+# IDD_XDF_TABLE_ED_ALDL
+Dlg.XDF.XdfTableEdAldl.XdfTableEdAldlXdaStat = ลิงก์ DA แกน X
+Dlg.XDF.XdfTableEdAldl.XdfTableEdAldlYdaStat = ลิงก์ DA แกน Y
+Dlg.XDF.XdfTableEdAldl.XdfTableEdAldlXLinkmodeStat = โหมดลิงก์
+Dlg.XDF.XdfTableEdAldl.XdfTableEdAldlYLinkmodeStat = โหมดลิงก์
+# IDD_XDF_TABLE_ED_COL
+Dlg.XDF.XdfTableEdCol.XdfTableEdColNumcolsStat = จำนวนคอลัมน์
+Dlg.XDF.XdfTableEdCol.XdfTableEdColColunitsStat = หน่วยคอลัมน์
+Dlg.XDF.XdfTableEdCol.XdfTableEdColCollabeltypeStat = ชนิดป้ายคอลัมน์
+Dlg.XDF.XdfTableEdCol.XdfTableEdColPureintaxisGb = ค่าป้ายแกนภายใน
+Dlg.XDF.XdfTableEdCol.XdfTableEdColAddressStat = ตำแหน่ง (Hex)
+Dlg.XDF.XdfTableEdCol.XdfTableEdColAddrstepStat = ระยะตำแหน่ง
+Dlg.XDF.XdfTableEdCol.XdfTableEdColDatasizeStat = ขนาด
+Dlg.XDF.XdfTableEdCol.XdfTableEdColSigdigitsStat = เลขนัยสำคัญ
+Dlg.XDF.XdfTableEdCol.XdfTableEdColLabelsourceStat = ที่มาของป้าย
+Dlg.XDF.XdfTableEdCol.XdfTableEdColConversionStat = การแปลงค่า
+Dlg.XDF.XdfTableEdCol.XdfTableEdColScaleNormalizerGb = ลิงก์ Scale/Normalizer
+Dlg.XDF.XdfTableEdCol.XdfTableEdColDatatypeStat = ชนิดข้อมูล
+Dlg.XDF.XdfTableEdCol.XdfTableEdColStockunitsStat = หน่วยเดิม
+# IDD_XDF_TABLE_ED_GEN
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenVislvlStat = ระดับแสดงผล
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenTitleStat = ชื่อ
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenDescStat = คำอธิบาย
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenCelldatasizeStat = ขนาดเซลล์
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenOutputtypeStat = ชนิดเอาต์พุต
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenMajororderStat = ลำดับหลัก
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenCellunitsStat = หน่วย
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenAddressStat = ตำแหน่ง (Hex)
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenCataStat = หมวด A
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenCatbStat = หมวด B
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenMajorstrideStat = ระยะก้าวหลัก (ไบต์)
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenMinorstrideStat = ระยะก้าวรอง (ไบต์)
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenCatcStat = หมวด C
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenFileaddressStat = ตำแหน่งไฟล์
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenFinestepStat = ขั้นละเอียด
+Dlg.XDF.XdfTableEdGen.XdfTableEdGenCoarsestepStat = ขั้นหยาบ
+# IDD_XDF_TABLE_ED_ROW
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowNumrowsStat = จำนวนแถว
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowRowunitsStat = หน่วยแถว
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowRowlabeltypeStat = ชนิดป้ายแถว
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowPureintaxisGb = ค่าป้ายแกนภายใน
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowLabelsourceStat = ที่มาของป้าย
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowAddressStat = ตำแหน่ง (Hex)
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowAddrstepStat = ระยะตำแหน่ง
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowDatasizeStat = ขนาด
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowSigdigitsStat = เลขนัยสำคัญ
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowConversionStat = การแปลงค่า
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowScaleNormalizerGb = ลิงก์ Scale/Normalizer
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowDatatypeStat = ชนิดข้อมูล
+Dlg.XDF.XdfTableEdRow.XdfTableEdRowStockunitsStat = หน่วยเดิม
+
+# ==========================================================================
+# ScannerProModule: Static Control Labels (additional)
+# ==========================================================================
+# IDD_MON_TOOLBAR
+Dlg.ScannerProModule.MonToolbar.MonToolbarTimerangeStat = ช่วงเวลา
+
+# ==========================================================================
+# TPMoatesEmulatorPlugin: Static Control Labels
+# ==========================================================================
+# IDD_DATAACQ_CONFIG
+Dlg.TPMoatesEmulatorPlugin.DataacqConfig.DataacqConfigPorttypeStat = ชนิดพอร์ต
+Dlg.TPMoatesEmulatorPlugin.DataacqConfig.DataacqConfigFallbackportStat = พอร์ตสำรอง
+
+# IDD_ADXCMDSNDCOMMAND_PARAMS
+Dlg.ADX.AdxcmdsndcommandParams.AdxcmdsndcommandParamsHelpStat = กำหนดค่าที่จะถามผู้ใช้ตอนส่ง ใส่แต่ละค่าในคำสั่ง Hex (แท็บทั่วไป) ด้วยโทเคน [Label] เช่น 80 40 [FuelFlow] 23
+Dlg.ADX.AdxcmdsndcommandParams.Add = เพิ่ม...
+Dlg.ADX.AdxcmdsndcommandParams.Edit = แก้ไข...
+Dlg.ADX.AdxcmdsndcommandParams.Remove = นำออก
+
+# IDD_ADXSP_EDIT
+Dlg.ADX.AdxspEdit.Caption = ค่าที่ส่ง
+Dlg.ADX.AdxspEdit.LabelStat = ป้าย
+Dlg.ADX.AdxspEdit.SizeStat = ขนาด (บิต)
+Dlg.ADX.AdxspEdit.ByteorderGbStat = ไบต์ / เครื่องหมาย
+Dlg.ADX.AdxspEdit.Lsbfirst = LSB ก่อน
+Dlg.ADX.AdxspEdit.Signed = มี +/-
+Dlg.ADX.AdxspEdit.EquationStat = สูตร (ค่าดิบ = X)
+Dlg.ADX.AdxspEdit.UnitsStat = หน่วย
+Dlg.ADX.AdxspEdit.DecimalsStat = ทศนิยม
+Dlg.ADX.AdxspEdit.RangelowStat = ช่วงต่ำ
+Dlg.ADX.AdxspEdit.RangehighStat = ช่วงสูง
+Dlg.ADX.AdxspEdit.DefaultStat = ค่าเริ่มต้น
+Dlg.ADX.AdxspEdit.OK = ตกลง
+Dlg.ADX.AdxspEdit.Cancel = ยกเลิก
+
+# Data Acquisition: prompted SendCommand values
+Dlg.DAPromptValues.Caption = ใส่ค่าคำสั่ง
+Dlg.DAPromptValues.Instruct = ใส่ค่าที่จะส่งไปกับคำสั่งนี้:
+Dlg.DAPromptValues.OK = ตกลง
+Dlg.DAPromptValues.Cancel = ยกเลิก
